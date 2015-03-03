@@ -1,0 +1,31 @@
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+p {
+  font-size : 1em;
+  font-weight : 300;
+  line-height : 1.6em;
+}
+.onesection {
+  width : 100%;
+}
+
+.onesection h1 {
+  font-weight : 400;
+  text-align : center;
+}
+
+.onesection h1:after {
+  width: 200px;
+  margin: 20px auto 40px auto;
+  content : '';
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid #111;
+}
+
+.onesection h2 {
+  text-align:center;
+  font-weight: 700;
+}
