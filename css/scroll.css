@@ -1,0 +1,68 @@
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+p {
+  font-size : 1em;
+  font-weight : 300;
+  line-height : 1.6em;
+}
+
+
+
+header.topheader {
+  min-height: 850px;
+  background : url("../images/airport.png") no-repeat fixed center;
+  background-size: 100%;
+  padding: 200px 0 0 0;
+}
+
+.logocontainer {
+  margin : 0;
+  background: rgba(255,255,255,0.9);
+  padding : 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.logocontainer.fixed {
+  position: fixed;
+  top:0px; left:0px; right: 0px; height: 100px;
+  text-align: left;
+
+}
+
+.logocontainer img.logo, .logocontainer img.logo2 {
+  height: 100px;
+  display : inline-block;
+  margin: auto 20px;
+}
+
+.logocontainer.fixed img.logo, .logocontainer.fixed img.logo2 {
+  height: 60px;
+}
+
+.onesection {
+  width : 100%;
+  margin: 200px auto;
+}
+
+.onesection h1 {
+  font-weight : 400;
+  text-align : center;
+  margin-top: 100px;
+}
+
+.onesection h1:after {
+  width: 200px;
+  margin: 20px auto 40px auto;
+  content : '';
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid #111;
+}
+
+.onesection h2 {
+  text-align:center;
+  font-weight: 700;
+}
