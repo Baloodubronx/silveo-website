@@ -6,100 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SILVEO - Solution delivery consulting</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/silveo.css" rel="stylesheet">
+    -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/silveo.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <header class="topheader">
-      <div class="logocontainer">
-        <img src="images/petitlogo.png" class="logo">
-        <img src="images/logo-sans-img.png" class="logo2">
+    <div class="one-long-bar"></div>
+
+    <!-- HEADER -->
+    <header class="main-header" id="section1">
+      <div class="bg" id="bg1"></div>
+      <div class="vertical logo-container">
+        <div class="logo-content">
+          <img id="logo" src="images/logo-couleur.png">
+          <h2 id="title1">SAP Consulting.</h2>
+          <h2 id="title2">Reinvented.</h2>
+        </div>
       </div>
+      <a onclick="scrollToMain()" href="javascript:void(0);" class="scrolldown">
+        <span class="ti-angle-double-down"></span>
+      </a>
     </header>
-    <section class="onesection">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1>WE BELIEVE IN A CUSTOMER CENTRIC APPROACH</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h2>EXPERTISE IS NOT ENOUGH.</h2>
-            <p>
-              <b>You want a Partner with</b> the functional and technical ability and
-              agility to assist the solution implementation on the various tools
-              involved: SAP, Flexnet (APRISO), MES, EDI etc.
-            </p>
-          </div>
-          <div class="col-sm-4">
-            <h2>WE FOCUS ON YOUR NEEDS.</h2>
-            <p>
-              No more  gap between business expectations and project realizations
-            </p>
-          </div>
-          <div class="col-sm-4">
-            <h2>YOU CARE ABOUT ATTITUDE.</h2>
-            <p>
-              Easy to find SAP experts but much harder to find resources with
-              worldwide mobility, customer-centric attitude and communication skills
-            </p>
-          </div>
+
+    <!-- NAVBAR -->
+    <div class="mimik"></div>
+    <nav class="navbar" id="nav">
+      <div class="small-logo-container">
+        <div class="small-logo-content">
+          <img src="images/logo-01.png" class="logo">
         </div>
       </div>
-    </section>
-
-    <section class="onesection">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <h2>ABOUT US</h2>
-            <p>
-              SILVEO is a consulting company focused towards Supply Chain & Manufacturing IS solutions implementation.
-            </p>
-            <p>
-              Our team is made of Senior Consultants with solid experience in automotive business processes, international context and implementation methodology.
-            </p>
-            <p>
-              Delivering premium consulting services became our motto!
-            </p>
-          </div>
-          <div class="col-sm-4">
-            <p>SAP</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-              </div>
-            </div>
-            <p>MES</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-              </div>
-            </div>
-            <p>Human values</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-              </div>
-            </div>
-        </div>
+      <div class="navigation" id="navbuttons">
+        <ul>
+          <li>
+            <a href="#">Why</a>
+          </li>
+          <li>
+            <a href="#">What</a>
+          </li>
+          <li>
+            <a href="#">Who</a>
+          </li>
+          <li>
+            <a href="#">Where</a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </nav>
 
 
-</div>
+    <main class="main-content" id="maincontent">
+      <div class="padder"></div>
+      <div class="one-container center">
+        <h1 id="h11">WE BELIEVE IN A CUSTOMER CENTRIC APPROACH</h1>
+        <div id="roundy1" class="roundy"><span class="ti-face-smile"></span></div>
+      </div>
+      <div class="one-container right" id="cont1">
+        <h2>EXPERTISE IS NOT ENOUGH.</h2>
+        <p>
+          <b>You want a Partner with</b> the functional and technical ability and
+          agility to assist the solution implementation on the various tools
+          involved: SAP, Flexnet (APRISO), MES, EDI etc.
+        </p>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      </div>
+      <div class="one-container left" id="cont2">
+        <h2>WE FOCUS ON YOUR NEEDS.</h2>
+        <p>
+          No more gap between business expectations and project realizations
+        </p>
+      </div>
+      <div class="one-container center" id="cont3">
+        <h2>YOU CARE ABOUT ATTITUDE.</h2>
+        <p>
+          Easy to find SAP experts but much harder to find resources with
+          worldwide mobility, customer-centric attitude and communication skills
+        </p>
+      </div>
+      <div class="one-container">
+      </div>
+    </main>
+
+
+    <!-- jQuery (necessary for Bootstrap JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
     <script src="js/silveo.js"></script>
   </body>
 </html>

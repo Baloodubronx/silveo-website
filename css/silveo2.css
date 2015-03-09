@@ -1,0 +1,165 @@
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+p {
+  font-size : 1em;
+  font-weight : 300;
+  line-height : 1.6em;
+}
+
+.section-container {
+  position: relative;
+}
+
+.one-bg {
+  position: fixed;
+  width:100%;
+  height:120%;
+  top:0;
+  left:0;
+  z-index:-1;
+  opacity: 1;
+}
+
+#bg1 {
+  background : url("../images/airport.png") no-repeat center;
+  background-size: 120%;
+}
+
+.logo-container {
+  text-align:center;
+}
+
+.empty-section {
+  display: block;
+  background: transparent;
+  position: relative;
+  clear:both;
+}
+
+.something-powerful {
+  margin: 0 auto;
+  font-size: 2em;
+  text-align: center;
+  opacity : 0;
+}
+
+.something-powerful h2 {
+  position: absolute;
+  padding: 20px 10px;
+  left: 30%;
+  right: 30%;
+  top: 10%;
+  text-align: center;
+  background: rgba(92, 152, 210, 0.5);
+  background: rgba(255,255,255,0.6);
+  font-weight: 100;
+  font-size: 1.8em;
+  color: #124073;
+  color: #111;
+}
+
+.one-long-bar {
+  position: fixed;
+  margin: 0 auto;
+  bottom:0;
+  top:0;
+  left:50%;
+  right:50%;
+  border-left: 1px solid #111;
+  z-index:-1;
+}
+
+.header-container {
+  position:relative;
+  height: 1000px;
+}
+#header1 {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+  background-size: 120%;
+  z-index:0;
+}
+
+.one-section {
+  position:relative;
+  background: rgba(255,255,255,1);
+  margin: auto auto;
+}
+
+.header-content {
+  padding :  100px 0;
+}
+
+.logo-container {
+  z-index:1;
+  position: fixed;
+  top:0px; left:0px; right: 0px; height: auto;
+  text-align: left;
+  background: rgba(255,255,255,0.7);
+  padding : 0;
+  left:0;
+}
+
+.logo-content {
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.navigation {
+  display: inline-block;
+  float:right;
+  line-height: 70px;
+}
+
+.navigation ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.navigation ul li {
+  display :  inline-block;
+  padding: 10px 20px;
+}
+
+.navigation ul li a {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#nav {
+  opacity: 0;
+}
+
+.logo-container img.logo, .logo-container img.logo2 {
+  height: 70px;
+  display : inline-block;
+  margin: auto 5px;
+}
+
+.one-section h1 {
+  font-weight : 400;
+  text-align : center;
+  margin-top: 100px;
+}
+
+.one-section h1:after {
+  width: 200px;
+  margin: 20px auto 40px auto;
+  content : '';
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid #111;
+}
+
+.one-section h2 {
+  text-align:center;
+  font-weight: 700;
+}
