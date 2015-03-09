@@ -80,6 +80,7 @@ p {
 
 #bg2 {
   background : url("../images/2.png") no-repeat center;
+  background-size: cover;
 }
 
 .vertical {
