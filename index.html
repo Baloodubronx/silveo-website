@@ -5,114 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SILVEO - Solution delivery consulting</title>
-
-    <!-- Bootstrap
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <link href="css/silveo.css" rel="stylesheet">
-
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="one-long-bar"></div>
-
-    <!-- HEADER -->
-    <header class="main-header" id="section1">
-      <div class="bg" id="bg1"></div>
+    <div class="one-long-bar"></div><!-- HEADER -->
+    <header id="section1" class="main-header">
+      <div id="bg1" class="bg"></div>
       <div class="vertical logo-container">
-        <div class="logo-content">
-          <img id="logo" src="images/logo-couleur.png">
+        <div class="logo-content"><img id="logo" src="images/logo-couleur.png">
           <h2 id="title1">SAP Consulting.</h2>
-          <h2 id="title2">Reinvented.</h2>
+          <h2 id="title2">Reinvented</h2>
         </div>
-      </div>
-      <a onclick="scrollToMain()" href="javascript:void(0);" class="scrolldown">
-        <span class="ti-angle-double-down"></span>
-      </a>
+      </div><a onclick="scrollToMain()" href="javascript:void(0);" class="scrolldown"><span class="ti-angle-double-down"></span></a>
     </header>
-
-    <!-- NAVBAR -->
-    <div class="mimik"></div>
-    <nav class="navbar" id="nav">
-      <div class="small-logo-container">
-        <div class="small-logo-content">
-          <img src="images/logo-01.png" class="logo">
-        </div>
-      </div>
-      <div class="navigation" id="navbuttons">
-        <ul>
-          <li>
-            <a href="#">Why</a>
-          </li>
-          <li>
-            <a href="#">What</a>
-          </li>
-          <li>
-            <a href="#">Who</a>
-          </li>
-          <li>
-            <a href="#">Where</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-
-    <main class="main-content" id="maincontent">
-      <div class="padder"></div>
-      <div class="one-container center">
-        <h1 id="h11">WE BELIEVE IN A CUSTOMER CENTRIC APPROACH</h1>
-        <div id="roundy1" class="roundy"><span class="ti-face-smile"></span></div>
-      </div>
-      <div class="one-container right" id="cont1">
-        <h2>EXPERTISE IS NOT ENOUGH.</h2>
-        <p>
-          <b>You want a Partner with</b> the functional and technical ability and
-          agility to assist the solution implementation on the various tools
-          involved: SAP, Flexnet (APRISO), MES, EDI etc.
-        </p>
-
-      </div>
-      <div class="one-container left" id="cont2">
-        <h2>WE FOCUS ON YOUR NEEDS.</h2>
-        <p>
-          No more gap between business expectations and project realizations
-        </p>
-      </div>
-      <div class="one-container center" id="cont3">
-        <h2>YOU CARE ABOUT ATTITUDE.</h2>
-        <p>
-          Easy to find SAP experts but much harder to find resources with
-          worldwide mobility, customer-centric attitude and communication skills
-        </p>
-      </div>
-      <div class="one-container big" id="cont4">
-        <div class="bg" id="bg2"></div>
-        <div class="vertical">
-          <h2>We have human values and stuff that is cool</h2>
-          <p>We even have an employee that plays saxophone! whoa!</p>
-        </div>
-      </div>
-      <div class="one-container">
-      </div>
-      <div class="one-container">
-      </div>
-      <div class="one-container">
-      </div>
-      <div class="one-container">
-      </div>
-    </main>
-
-
-    <!-- jQuery (necessary for Bootstrap JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/CSSPlugin.min.js"></script>
+    <!-- inject:js-->
+    <script src="js/vendors/CSSplugin.min.js"></script>
+    <script src="js/vendors/TweenLite.min.js"></script>
+    <script src="js/vendors/jquery.min.js"></script>
     <script src="js/silveo.js"></script>
+    <!-- endinject-->
   </body>
 </html>

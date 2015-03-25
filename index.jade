@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title
+      | SILVEO - Solution delivery consulting
+
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700', rel='stylesheet', type='text/css')
+    link(href="styles.css", rel="stylesheet")
+
+  body
+    .one-long-bar
+
+    <!-- HEADER -->
+    header.main-header#section1
+      .bg#bg1
+      .vertical.logo-container
+        .logo-content
+          img(id="logo", src="images/logo-couleur.png")
+          h2#title1
+            | SAP Consulting.
+          h2#title2
+            | Reinvented
+
+      a(onclick="scrollToMain()", href="javascript:void(0);", class="scrolldown")
+        span.ti-angle-double-down
+    // inject:js
+    // endinject
