@@ -11,20 +11,45 @@ html(lang="en")
     link(href="styles.css", rel="stylesheet")
 
   body
-    .one-long-bar
-
-    <!-- HEADER -->
-    header.main-header#section1
-      .bg#bg1
-      .vertical.logo-container
-        .logo-content
-          img(id="logo", src="images/logo-couleur.png")
-          h2#title1
-            | SAP Consulting.
-          h2#title2
-            | Reinvented
-
-      a(onclick="scrollToMain()", href="javascript:void(0);", class="scrolldown")
-        span.ti-angle-double-down
+    .godown
+      span.ti-arrow-circle-down
+    header.logo-container
+      .logo-overlay
+      .logo-content
+        .logo-inner
+          .logo-tab
+            img(id="logo", src="images/logo.png")
+    div.opener-container
+      a#menuopener
+        span#opener
+          span.ti-menu
+          | MENU
+        span#closer
+          span.ti-close
+          | CLOSE
+    .menu-container
+      .menu-content
+        ul
+          li
+            a
+              | MENU 1
+          li
+            a
+              | MENU 2
+          li
+            a
+              | MENU 3
+    
+    
+    main.main-container
+      .main-content
+        .one-section
+          include pages/section1.jade
+        .one-section
+          | SECOND SECTION 
+    
+    
+    
+    
     // inject:js
     // endinject

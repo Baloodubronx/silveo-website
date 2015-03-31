@@ -52,7 +52,8 @@ gulp.task('watch', ['inject', 'server'], function() {
   // start the livereload server
   livereload.listen();
   gulp.watch('./styl/*.styl', ['stylus']);
-  gulp.watch('./index.jade', ['jade']);
+  gulp.watch('./index.jade', ['inject']);
+  gulp.watch('./pages/*.jade', ['inject']);
   gulp.watch('./js/**/*.js', ['reload']);
 });
 

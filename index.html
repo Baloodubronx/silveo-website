@@ -9,16 +9,39 @@
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="one-long-bar"></div><!-- HEADER -->
-    <header id="section1" class="main-header">
-      <div id="bg1" class="bg"></div>
-      <div class="vertical logo-container">
-        <div class="logo-content"><img id="logo" src="images/logo-couleur.png">
-          <h2 id="title1">SAP Consulting.</h2>
-          <h2 id="title2">Reinvented</h2>
+    <div class="godown"><span class="ti-arrow-circle-down"></span></div>
+    <header class="logo-container">
+      <div class="logo-overlay"></div>
+      <div class="logo-content">
+        <div class="logo-inner">
+          <div class="logo-tab"><img id="logo" src="images/logo.png"></div>
         </div>
-      </div><a onclick="scrollToMain()" href="javascript:void(0);" class="scrolldown"><span class="ti-angle-double-down"></span></a>
+      </div>
     </header>
+    <div class="opener-container"><a id="menuopener"><span id="opener"><span class="ti-menu"></span>MENU</span><span id="closer"><span class="ti-close"></span>CLOSE</span></a></div>
+    <div class="menu-container">
+      <div class="menu-content">
+        <ul>
+          <li><a>MENU 1</a></li>
+          <li><a>MENU 2</a></li>
+          <li><a>MENU 3</a></li>
+        </ul>
+      </div>
+    </div>
+    <main class="main-container">
+      <div class="main-content">
+        <div class="one-section">
+          <div class="one-container">
+            <div class="one-content">
+              <h1>SILVEO</h1>
+              <h2>SAP CONSULTING.</h2>
+              <h3>REINVENTED.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="one-section">SECOND SECTION </div>
+      </div>
+    </main>
     <!-- inject:js-->
     <script src="js/vendors/CSSplugin.min.js"></script>
     <script src="js/vendors/TweenLite.min.js"></script>
