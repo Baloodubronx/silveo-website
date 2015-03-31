@@ -11,21 +11,40 @@ html(lang="en")
     link(href="styles.css", rel="stylesheet")
 
   body
-    .godown
-      span.ti-arrow-circle-down
+    div.godown
+      a#godown
+        span.ion-chevron-down
     header.logo-container
       .logo-overlay
       .logo-content
         .logo-inner
           .logo-tab
             img(id="logo", src="images/logo.png")
+      .social-zone
+        .one-social
+          a(href="#")
+            span.ion-email
+        .one-social
+          a(href="#")
+            span.ion-social-facebook
+              
+        .one-social
+          a(href="#")
+            span.ion-social-twitter
+        
+        .one-social
+          a(href="#")
+            span.ion-social-linkedin
+        .one-social
+          a(href="#")
+            span.ion-ios-book
     div.opener-container
       a#menuopener
         span#opener
-          span.ti-menu
+          span.ion-navicon-round
           | MENU
         span#closer
-          span.ti-close
+          span.ion-close-round
           | CLOSE
     .menu-container
       .menu-content
@@ -46,7 +65,9 @@ html(lang="en")
         .one-section
           include pages/section1.jade
         .one-section
-          | SECOND SECTION 
+          include pages/section2.jade
+        .one-section.darkbg
+          include pages/section3.jade
     
     
     

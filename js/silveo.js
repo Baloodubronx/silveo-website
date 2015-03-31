@@ -27,6 +27,9 @@ $(document).ready(function() {
 
   $('.one-section').height(windowHeight);
   $('body').bind('mousewheel DOMMouseScroll onmousewheel touchmove scroll', checkScrolling);
+  $('#godown').click(function() {
+    scrollDown();
+  });
 });
 
 

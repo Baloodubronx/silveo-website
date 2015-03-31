@@ -29,12 +29,25 @@ h3
   font-weight 600
   margin 10px 0
 
+h4
+  font-size 30px
+  font-weight 300
+
+*:select
+  background transparent
+
+a:focus
+  outline none
+
 .godown
   position fixed
   bottom 10px
   right 37%
-  span
-    font-size 30px
+  z-index 1000
+  a
+    cursor pointer
+    span
+      font-size 30px
 
 .main-container
   display: inline-block;
@@ -55,5 +68,40 @@ h3
     display table-cell
     vertical-align middle
     text-align center
+    padding 40px
     h2.center-title
       display block
+
+ul.twocol
+  margin 0
+  padding 0
+  list-style none
+  overflow hidden
+  li
+    col(1/2, 0,  2)
+
+
+
+
+
+
+
+
+.bluebg
+  background #446CB3 !important
+
+.darkbg
+  background darken(#16A085, 100%) !important
+  color #fff
+
+.orangebg
+  background #EE762A  !important
+
+.redbg
+  background #e25440 !important
+
+.lightgreenbg
+  background #23AB6A !important
+
+.yellowbg
+  background #f2a925 !important
