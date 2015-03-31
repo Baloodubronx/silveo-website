@@ -33,7 +33,7 @@ gulp.task('stylus', function(){
       )
     )
     .pipe(concat('styles.css'))
-    .pipe(gulp.dest(''))
+    .pipe(gulp.dest('./style/'))
     .pipe(livereload());
 });
 
