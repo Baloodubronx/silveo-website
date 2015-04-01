@@ -4319,7 +4319,7 @@ ul.twocol li:nth-child(2n+1) {
   background: #446cb3 !important;
 }
 .darkbg {
-  background: #000 !important;
+  background: #111 !important;
   color: #fff;
 }
 .orangebg {
@@ -4487,4 +4487,21 @@ ul.twocol li:nth-child(2n+1) {
   -ms-transform: scale(0.9, 0.9);
   -webkit-transform: scale(0.9, 0.9);
   transform: scale(0.9, 0.9);
+}
+.dotsforfun {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  background: #111;
+}
+.dotsforfun span {
+  color: #fff;
+  display: block;
+  width: 40px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 13px;
 }
