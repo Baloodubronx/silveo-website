@@ -11,70 +11,16 @@ html(lang="en")
     link(href="style/styles.css", rel="stylesheet")
 
   body
-    div.godown
-      a#godown
-        span.ion-chevron-down
-    .dotsforfun
-      span.ion-ios-circle-filled
-      span.ion-ios-circle-filled
-      span.ion-ios-circle-filled
-      span.ion-ios-circle-outline
-      span.ion-ios-circle-outline
-      span.ion-ios-circle-outline
-    header.logo-container
-      .logo-overlay
-      .logo-content
-        .logo-inner
-          .logo-tab
-            img(id="logo", src="images/logo.png")
-      .social-zone
-        .one-social
-          a(href="#")
-            span.ion-email
-        .one-social
-          a(href="#")
-            span.ion-social-facebook
-              
-        .one-social
-          a(href="#")
-            span.ion-social-twitter
-        
-        .one-social
-          a(href="#")
-            span.ion-social-linkedin
-        .one-social
-          a(href="#")
-            span.ion-ios-book
-    div.opener-container
-      a#menuopener
-        span#opener
-          span.ion-navicon-round
-          | MENU
-        span#closer
-          span.ion-close-round
-          | CLOSE
-    .menu-container
-      .menu-content
-        ul
-          li
-            a
-              | MENU 1
-          li
-            a
-              | MENU 2
-          li
-            a
-              | MENU 3
+    section.space-frame(data-enter="fadeIn" data-exit="zoomOut fadeOut" data-duration="1.3")
+      .space-inner-frame
+        include pages/section1.jade
+    section.space-frame
+      .space-inner-frame
+        include pages/section1.jade
+    section.space-frame
+      .space-inner-frame
+        include pages/section1.jade
     
-    
-    main.main-container
-      .main-content
-        .one-section
-          include pages/section1.jade
-        .one-section
-          include pages/section2.jade
-        .one-section.darkbg
-          include pages/section3.jade
     
     
     
