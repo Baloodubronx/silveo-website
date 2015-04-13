@@ -24,18 +24,18 @@
 			window.onscroll = function () {
 				if(!repeatIntervalId){
 					startRepeat();
-				};
+				}
 			};
 		};
 
 		// ----- private methods ------
-		
+
 		// Tick forwards, check for scroll stop and run *method*.
 		var update = function(){
 			if(repeatIntervalId){
 				// detect when to stop repeating
 				var tmpScrollTop = $window.scrollTop();
-				
+
 
 				// delta stopped
 				if(tmpScrollTop == lastScrollTop){
@@ -44,13 +44,13 @@
 						delayCount = 0;
 						stopRepeat();
 					}
-				};
+				}
 
 				lastScrollTop = tmpScrollTop;
 
 				// run the method
 				method();
-			};
+			}
 		};
 
 		var startRepeat = function(){
@@ -196,14 +196,19 @@
 				if(customTransition || customEnter || customExit){
 					var newTransition = {all:[],enter:[],exit:[]};
 
-					var toTransition = function(arr){return arr.split(/\s+/).map(function(t){return transitions[t];})};
+					var toTransition = function(arr){
+						return arr.split(/\s+/)
+							.map(function(t){
+								return transitions[t];
+							});
+					};
 
 					newTransition.all = customTransition ? toTransition(customTransition) : [];
 					newTransition.enter = customEnter ? toTransition(customEnter) : [];
 					newTransition.exit = customExit ? toTransition(customExit) : [];
 
 					return {selector:"#"+frameId, duration:simulatedHeight, distanceTo:distanceTo, transition:newTransition};
-				};
+				}
 
 				return {selector:"#"+frameId, duration:simulatedHeight, distanceTo:distanceTo};
 			});
@@ -237,13 +242,13 @@
 			if(top < trigger){ // prev frame
 				$('.space-frame').hide();
 				currentFrame--;
-				if (currentFrame < 0){currentFrame = 0};
+				if (currentFrame < 0){currentFrame = 0;}
 				$(frames[currentFrame].selector).show();
 			}else if(top > (trigger + frames[currentFrame].duration)){ // next frame
 				$('.space-frame').hide();
 				currentFrame++;
 				$(frames[currentFrame].selector).show();
-			};
+			}
 		};
 
 		function propValueToCssFormat (prop, val) {
@@ -253,19 +258,19 @@
 				case "rotate":
 					return 'rotate('+val+'deg)';
 				case "translate3d":
-					return 'translate3d(' + 
+					return 'translate3d(' +
 						(val.x ? val.x+'px' : 0)+','+
 						(val.y ? val.y+'px' : 0)+','+
 						(val.z ? val.z+'px' : 0)+')';
 				case "rotate3d":
-					return 'rotate3d(' + 
+					return 'rotate3d(' +
 						(val.x ? val.x : 0)+','+
 						(val.y ? val.y : 0)+','+
 						(val.z ? val.z : 0)+','+
 						(val.angle ? val.angle+'deg' : 0)+')';
 				default:
 					return val;
-			};
+			}
 		}
 
 		// Update css values of the current frame to their delta-value in the scroll progress
@@ -283,8 +288,8 @@
 						props['transform'] += propValueToCssFormat(property, deltaValue(trans, scrollInElement, property));
 					}else{
 						props[property] = propValueToCssFormat(property, deltaValue(trans, scrollInElement, property));
-					};
-				};
+					}
+				}
 			});
 
 			if(scrollInElement <= (frames[currentFrame].duration / 2)){
@@ -294,8 +299,8 @@
 							props['transform'] += propValueToCssFormat(property, deltaValue(trans, scrollInElement*2, property));
 						}else{
 							props[property] = propValueToCssFormat(property, deltaValue(trans, scrollInElement*2, property));
-						};
-					};
+						}
+					}
 				});
 			}else{
 				frameTransition.exit.forEach(function (trans) {
@@ -304,8 +309,8 @@
 							props['transform'] += propValueToCssFormat(property, deltaValue(trans, (scrollInElement - (frames[currentFrame].duration / 2))*2, property));
 						}else{
 							props[property] = propValueToCssFormat(property, deltaValue(trans, (scrollInElement - (frames[currentFrame].duration / 2))*2, property));
-						};
-					};
+						}
+					}
 				});
 			}
 
@@ -321,9 +326,9 @@
 
 		  if(property == 'translate3d' || property == 'rotate3d'){
 		  		var trans = {};
-		  		for(axis in value.from){
+		  		for(var axis in value.from){
 		  			trans[axis] = +linearEase(delta, value.from[axis], (value.to[axis]-value.from[axis]), frameDuration).toFixed(4);
-		  		};
+		  		}
 		  		return trans;
 		  }else{
 			  // compute delta value and round it to four digits to save performance.
@@ -347,16 +352,16 @@
 			for(var name in customTrans){
 				if(transitions[name]){
 					console.log("Transition name already exists!!!");
-					return
-				};
+					return;
+				}
 
 				transitions[name] = customTrans[name];
 
-			};
+			}
 
 			// reinit with new transitons.. todo: fix so that we do not have to.
 			init();
-		}
+		};
 
 		// export immutable public properties
 		return Object.freeze({
@@ -366,20 +371,19 @@
 	};
 
 	var initFrameCSS = function () {
+		//var frameStyle = ".space-frame {display: none;position: fixed;width: 74vw;height: 100vh; margin-left:26%} ";
 		var frameStyle = ".space-frame {display: none;position: fixed;width: 100vw;height: 100vh;} ";
-		var innerFrameStyle = ".space-frame .space-inner-frame {position: absolute;transform-style: preserve-3d;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}"
+		var innerFrameStyle = ".space-frame .space-inner-frame {position: absolute;transform-style: preserve-3d;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}";
 
 		var style = document.createElement('style');
 		style.type = 'text/css';
 		style.innerHTML = frameStyle + innerFrameStyle;
 		document.getElementsByTagName('head')[0].appendChild(style);
-	}
+	};
 
 	initFrameCSS();
 
-	Space = SpaceController()
+	Space = SpaceController();
 	Space.init();
 
 }).call(this);
-
-
