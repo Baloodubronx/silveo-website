@@ -13,15 +13,15 @@ html(lang="en")
   body
     //include pages/header.jade
     
+    .direct-access
+      a(href="silveo.html")
+        | access silveo.com
+    main.space-container
+      include pages/section1.jade
+      include pages/section1bis.jade
+      include pages/section2.jade
+      include pages/section3.jade
     
-    main.main-container
-      .main-content
-        include pages/section1.jade
-        include pages/section1bis.jade
-        include pages/section2.jade
-        include pages/section3.jade
     
-    
-    
-    // inject:js
-    // endinject
+    script(src="js/vendors/jquery.min.js")
+    script(src="js/vendors/space.js")

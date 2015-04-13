@@ -4,9 +4,9 @@ var windowWidth = 0;  // The window width
 var curpos=0;
 var animated= false;
 // SCROLL BACK TO TOP BEFORE UNLOADING PAGE -> ENSURE ON TOP AT EVERY LOADING
-$(window).on('beforeunload', function(){
+/*$(window).on('beforeunload', function(){
   $(this).scrollTop(0);
-});
+});*/
 
 // WHEN DOM IS READY
 $(document).ready(function() {
@@ -25,83 +25,5 @@ $(document).ready(function() {
       $('#closer').toggle();}, 300);
   });
 
-  $('.one-section').height(windowHeight);
-  /*$('body').bind('mousewheel DOMMouseScroll onmousewheel touchmove scroll', checkScrolling);
-  $('#godown').click(function() {
-    scrollDown();
-  }*);*/
-  //$('body').animate({scrollTop: $('body').height()}, 30000);
+  $('.one-section').css("min-height", windowHeight);
 });
-
-
-function scrollUp() {
-  if (!animated) {
-    animated=true;
-    var pos = $('body').scrollTop();
-    $('body').animate({scrollTop: pos-windowHeight}, 500, animadone);
-  }
-}
-
-function scrollDown() {
-  if (!animated) {
-    animated=true;
-    var pos = $('body').scrollTop();
-    $('body').animate({scrollTop: pos+windowHeight}, 500, animadone);
-  }
-
-  /*$('.logo-container').css(
-    {
-      'background': 'url(images/bg.png)',
-      'background-position': '50% 50%'
-    } );*/
-}
-
-function animadone() {
-  setTimeout(function() {
-    animated = false;
-  }, 500);
-}
-
-scrollTop = function() {
-  if (!animated) {
-    animated=true;
-    $('body').animate({scrollTop: 0}, 500, animadone);
-  }
-};
-
-
-function checkScrolling(e) {
-
-  /*if (e.target.id == 'el') return;
-
-  console.log(e.originalEvent.wheelDelta);
-
-  if (e.originalEvent.wheelDelta && e.originalEvent.wheelDelta >= 0) {
-    //Up
-    scrollUp();
-  } else if (e.originalEvent.detail && e.originalEvent.detail <= 0) {
-    //Up
-    scrollUp();
-  } else {
-    // Down
-    scrollDown();
-  }
-  e.preventDefault();
-  e.stopPropagation();*/
-
-
-}
-
-function animatro() {
-
-}
-
-/*$(document).on('scroll', function(){
-
-var position = $('body').scrollTop();
-console.log(position);
-});
-
-function scrollTo(pos) {
-  $('body').scrollTop(pos);
-}*/

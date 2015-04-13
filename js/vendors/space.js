@@ -2,6 +2,9 @@
 //	Uses Douglas Crockfords Object creation style
 //	In preparation for ES6.
 //
+$(window).on('beforeunload', function(){
+  $(this).scrollTop(0);
+});
 
 (function () {
 

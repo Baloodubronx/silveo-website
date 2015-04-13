@@ -4213,43 +4213,118 @@ body {
   font-size: 15px;
   text-align: center;
 }
-h1 {
-  font-weight: 600;
-  margin: 0;
+a {
+  color: #24518a;
+  text-decoration: none;
 }
+h1,
 h2,
 h3,
 h4,
 h5 {
+  font-weight: 400;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+  color: #24518a;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2em;
+  margin-top: 50px;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.2em;
+}
+p {
+  font-size: 1.1em;
+  font-weight: 200;
+}
+.center-text {
+  text-align: center;
+}
+.bordered {
+  border-top: 2px solid #24518a;
+  border-bottom: 2px solid #24518a;
+  padding: 10px 0;
+}
+.main-container {
+  margin-left: 26%;
+  width: 74%;
+}
+.one-section {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  display: table;
+}
+.one-section .one-section-container {
+  display: table-cell;
+  padding: 0 100px;
+  vertical-align: middle;
+}
+.one-section.grey {
+  background: #e3e3e3;
+}
+.hasbg .one-section-container {
+  background: rgba(255,255,255,0.8);
+}
+.isblue {
+  color: #24518a;
+}
+ul.twocol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.twocol li {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  vertical-align: middle;
+}
+.space-container {
+  text-align: center;
+}
+.space-container h1 {
+  font-weight: 600;
+  margin: 0;
+}
+.space-container h2,
+.space-container h3,
+.space-container h4,
+.space-container h5 {
   font-weight: 300;
   margin: 20px 0;
 }
-h1 {
+.space-container h1 {
   font-size: 105px;
 }
-h2 {
+.space-container h2 {
   font-size: 50px;
 }
-h3 {
+.space-container h3 {
   font-size: 40px;
 }
-h4 {
+.space-container h4 {
   font-size: 30px;
 }
-h5 {
+.space-container h5 {
   font-size: 25px;
 }
-.blue {
-  background: #24518a;
-  color: #fff;
+.space-container p.scrolldown {
+  margin-top: 100px;
+  color: #aaa;
+  font-weight: 200;
 }
-.orange {
-  background: #ea5a0b;
-  color: #000;
-  background: url("../images/bg.png");
-}
-.orange .space-inner-frame {
-  background: rgba(255,255,255,0.8);
+.space-container p.scrolldown span {
+  display: block;
 }
 .bg1 {
   background: url("../images/1.jpg") no-repeat 50% 50%;
@@ -4261,6 +4336,20 @@ h5 {
 }
 .hasbg .space-inner-frame {
   background: rgba(255,255,255,0.8);
+}
+.direct-access {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+.direct-access a {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-weight: 100;
+  border: 1px solid #24518a;
 }
 .logo-container {
   position: fixed;

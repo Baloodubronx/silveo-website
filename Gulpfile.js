@@ -11,15 +11,12 @@ var gulp = require('gulp'),
     st = require('st'),
     http = require('http');
 
-function jsfiles() {
-  return streamqueue({ objectMode: true },
-    gulp.src(['js/vendors/*.js'], {read: false}),
-    gulp.src(['js/*.js'], {read: false})
-  );
-}
-
 gulp.task('jade', function() {
-  return gulp.src('index.jade')
+  gulp.src('index.jade')
+    .pipe(jade({pretty: true}))
+    .pipe(gulp.dest(''))
+    .pipe(livereload());
+  return gulp.src('silveo.jade')
     .pipe(jade({pretty: true}))
     .pipe(gulp.dest(''))
     .pipe(livereload());
@@ -37,22 +34,17 @@ gulp.task('stylus', function(){
     .pipe(livereload());
 });
 
-gulp.task('inject', ['stylus', 'jade'], function(){
-  gulp.src('index.html')
-    .pipe(inject(jsfiles(), {relative:true}))
-    .pipe(gulp.dest(''))
-    .pipe(livereload());
-});
 
 gulp.task('reload', function(){
   gulp.src('./js/**/*.js').pipe(livereload());
 });
 
-gulp.task('watch', ['inject', 'server'], function() {
+gulp.task('watch', ['stylus', 'jade', 'server'], function() {
   // start the livereload server
   livereload.listen();
   gulp.watch('./styl/*.styl', ['stylus']);
   gulp.watch('./index.jade', ['inject']);
+  gulp.watch('./silveo.jade', ['inject']);
   gulp.watch('./pages/*.jade', ['inject']);
   gulp.watch('./js/**/*.js', ['reload']);
 });
