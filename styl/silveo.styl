@@ -2,18 +2,31 @@ theblue = #24518A
 theorange = #EA5A0B
 
 body
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
-  text-align center
+  //width 1100px
+  margin auto
+  //margin-top 60px
+  background url(../images/handmadepaper.png)
 a
   color theblue
   text-decoration none
+
+.onedot
+  height 20px
+  float left
+
+.content
+  width 1100px
+  margin auto
+  position relative
 
 h1
 h2
 h3
 h4
 h5
+  font-family: 'Josefin Sans', sans-serif;
   font-weight 400
 
 h1
@@ -33,44 +46,104 @@ p
   font-size 1.1em
   font-weight 200
 
-.center-text
+.approach
+  background:  url(../images/appbg.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom 40px
+  margin-bottom 50px
+
+h2.bigtitle
+  display inline-block
+  margin 40px
+  margin-top 60px
+  background #ffffff
+  font-size 20px
+  padding 10px 20px
+  color #111
+  line-height 20px
+
+.bigtitle:before
+  display inline-block
+  margin-right 10px
+  width 18px
+  height 18px
+  background:  url(../images/dot.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  content ''
+
+h2.catchphrase
+  color #ffffff
+  margin 0 0 30px 40px
+  font-weight 200
+  text-shadow: 2px 2px #111;
+
+.halfcol
+  position  relative
+  width 45%
+  float left
+  margin 20px
+  h3.catch2
+    margin 0
+    padding 0
+    font-size 20px
+    color #ffffff
+    font-weight 200
+    text-shadow: 1px 1px #111;
+    margin-left 20px
+    margin-bottom 10px
+  p.explain
+    margin-left 20px
+    color #ffffff
+    font-size 15px
+    margin-bottom 0
+
+.halfcol:before
+  position absolute
+  background rgba(255,255,255,1)
+  top 0
+  bottom 0
+  left 0
+  width 5px
+  content ''
+
+.clear
+  clear both
+
+.quote
   text-align center
+  font-size 30px
+  margin 20px 0
 
-.bordered
-  border-top 2px solid theblue
-  border-bottom 2px solid theblue
-  padding 10px 0
+.author
+  text-align right
+  font-size 25px
+  font-weight bold
+  margin-bottom 40px
 
-.main-container
-  margin-left 26%
-  width 74%
+.competencies
+  background #02A383 url(../images/pattern.svg) no-repeat center center
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-.one-section
-  position relative
-  width 100%
-  padding 20px 0
-  display table
-  .one-section-container
-    display table-cell
-    padding 0 100px
-    vertical-align middle
-.one-section.grey
-  background #e3e3e3
+.motto
+  margin 50px 0
+  img
+    width 100%
 
-.hasbg
-  .one-section-container
-    background rgba(255,255, 255, 0.8)
-
-.isblue
-  color theblue
-
-
-ul.twocol
-  margin 0
-  padding 0
-  list-style none
-  li
-    display inline-block
-    width 49%
-    text-align center
-    vertical-align middle
+.team
+  background:  url(../images/teambg.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom 40px
+  margin-bottom 50px
+  height 800px

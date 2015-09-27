@@ -6,13 +6,219 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title
       | SILVEO - Solution delivery consulting
-
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", type="text/css", href="slick/slick.css")
+    link(rel="stylesheet", type="text/css", href="slick/slick-theme.css")
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600', rel='stylesheet', type='text/css')
     link(href="style/styles.css", rel="stylesheet")
-
+  
   body
-    
-    
+    .menu-top
+      ul
+        li
+          a(href="#")
+            | Culture
+        li
+          a(href="#")
+            | Competencies
+        li
+          a(href="#")
+            | Team
+        li
+          a(href="#")
+            | Achievements
+        li
+          a(href="#")
+            | Location
+      h1 SILVEO
+    .splash
+      .splash-content
+        .logozone
+          img(src="images/biglogodot.png")
+        .textzone
+          h2 IS 
+            span.orange Consulting
+          h2 Human 
+            span.orange values
+          h2 Proven 
+            span.orange methodology
+    //
+      .header
+        img.logo(src="images/logo.png")
+        .menu-top
+          ul
+            li
+              a(href="#")
+                | OUR CULTURE
+            li
+              img.onedot(src="images/dot.png")
+              a(href="#")
+                | OUR COMPETENCIES
+            li
+              img.onedot(src="images/dot.png")
+              a(href="#")
+                | OUR TEAM
+            li
+              img.onedot(src="images/dot.png")
+              a(href="#")
+                | ACHEIVEMENTS
+            li
+              img.onedot(src="images/dot.png")
+              a(href="#")
+                | LOCATION
+              
+    .content
+      .intro-container
+        .intro
+          .oneslide
+            .thetext
+              h2
+                | It all started with a vision
+              p
+                | Quod opera consulta cogitabatur astute, ut hoc insidiarum genere Galli periret avunculus, ne eum ut praepotens acueret in fiduciam exitiosa coeptantem. verum navata est opera diligens hocque dilato Eusebius praepositus cubiculi missus est Cabillona aurum secum perferens, quo per turbulentos seditionum concitores occultius distributo et tumor consenuit militum et salus est in tuto locata praefecti. deinde cibo abunde perlato castra die praedicto sunt mota.
+              p
+                | Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae consulares nobilitarunt et praefecturae.
+              p
+                | Ac ne quis a nobis hoc ita dici forte miretur, quod alia quaedam in hoc facultas sit ingeni, neque haec dicendi ratio aut disciplina, ne nos quidem huic uni studio penitus umquam dediti fuimus. Etenim omnes artes, quae ad humanitatem pertinent, habent quoddam commune vinculum, et quasi cognatione quadam inter se continentur.
+            img(src="images/1.png")
+          .oneslide
+            .thetext
+              h2
+                | We love what we do
+            img(src="images/2.png")
+          .oneslide
+            .thetext
+              h2
+                | And we do it worldwide
+            img(src="images/3.png")
+      
+      .approach
+        h2.bigtitle
+          | OUR CULTURE
+        h2.catchphrase
+          | We believe in a 
+          b
+            | customer centric 
+          | approach
+        .halfcol
+          h3.catch2
+            | Experts don't fit teams and sometimes fly solo
+          p.explain
+            | On top of expertise, human relationships and values are at the center of our consulting way: 
+            | Appraising team spirit, mutual support and human capital,
+            | Creating an open minded environment and positive attitude
+            | We are continuously seeking for the well-being and personal development of our talent, for a durable, loyal
+            | and long-term collaboration. 
+            | This attitude will make the strength of our company and strengthen ourrelationships with customers
+        
+        .halfcol
+          h3.catch2
+            | Technical skills 
+            b
+              | is not enough
+          p.explain
+            | Being proactive, inventive to work, offering new solutions or thinking out of the box are a major building block of our consulting way.
+            | This creativity is the spark which will ignite new opportunities and enables us to demonstrate our greater value
+            | Our creativity is also expressed in the agility of our team and is possible by encouraging all initiatives seeking
+        .clear
+        .halfcol
+          h3.catch2
+            | Projects are 
+            b
+              | not only basic delivery
+          p.explain
+            | Positioning ourselves on a premium consulting service level, we are continuously seeking for excellency, high
+            | quality and differentiating value-added in every missions we deliver to our clients. This level of service is part
+            | of our consulting way and in the best interest of our clients.
+            | Because providing high quality deliverables is not enough, we measure that clients expect always more
+            | advisory roles and we are ready to keep up to their expectations.
+        
+        .halfcol
+          h3.catch2
+            | Being transparent 
+            b
+              | is not just 
+            |  telling the good news !
+          p.explain
+            | Trust is essential to creating a customer base: “We depend on repeating business. Our integrity has to be consistent all the time"
+            | This integrity, we prove it on a daily basis by: Being honest, transparent and ethics
+          p.explain
+            | We say what we do and we do what we say
+            
+        .clear
+        
+      
+      .quote
+        | "Try not to become a man of success, but rather try to become a man of value." 
+      .author
+        | Albert Einstein
+      
+      .competencies
+        h2.bigtitle
+          | OUR COMPETENCIES
+        h2.catchphrase
+          | End to end implementation requires 
+          b
+            | experience, technical capabilities 
+          | and 
+          b
+            | availability
+        
+        .halfcol
+          h3.catch2
+            | Project Management
+          p.explain
+            | Customer blueprint and  project organization definition, project assistance
+        .halfcol
+          h3.catch2
+            | Functional assistance
+          p.explain
+            | Methodology, change management and business specifications
+        .clear
+        .halfcol
+          h3.catch2
+            | Solutions’ design
+          p.explain
+            | Process / SAP / MES solutions’ design or retrofit projects
+        .halfcol
+          h3.catch2
+            | Full scope projects
+          p.explain
+            | End-to-end Information Systems roll-out
+        .clear
+          
+        .halfcol
+          h3.catch2
+            | Logistics expertise
+          p.explain
+            | SAP expertise (PP/MM/LE/SD/QM/PM) 
+          p.explain
+            | MES expertise (APRISO/Barcode)
+          p.explain
+            | An end-to-end functional coverage in Supply Chain & Manufacturing (From Strategic planning to execution)
+        .halfcol
+          h3.catch2
+            | Financial
+          p.explain
+            | Financial solution integration (FI/CO/PS/IM/FM)
+        
+        .clear
+        
+      .motto
+        img(src='images/motto.png')
+          
+      .team
+        h2.bigtitle
+          | OUR TEAM
+        h2.catchphrase
+          b
+            | Diversity of consultants 
+          | is the 
+          b
+            | key to success
+        
+      
     
     script(src="js/vendors/jquery.min.js")
-    script(src="js/vendors/silveo.js")
+    script(type="text/javascript", src="slick/slick.min.js")
+    script(src="js/silveo.js")

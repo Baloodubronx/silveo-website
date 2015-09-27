@@ -1,143 +1,104 @@
-.logo-container
+
+.menu-top
   position fixed
   top 0
-  height 100%
   left 0
-  width 26%
-  background url('../images/bgmenu.jpg')
-  -webkit-backface-visibility hidden
-  z-index 1
-  display inline-block
-  background-size cover
-  background-position 50% 50%
-  color #fff
-  text-align center
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-
-  .logo-overlay
-    z-index -1
+  right 0
+  height 70px
+  //background #15233F
+  z-index 1000
+  padding 30px 50px
+  h1
+    font-size 30px
+    font-weight 600
+    display inline-block
+    color #ffffff
+    line-height 10px
+  ul
+    list-style none
+    margin 0
+    padding 0
+    height 42px
+    float right
+    li
+      display inline-block
+      height 20px
+      vertical-align middle
+      padding 11px 0
+      a
+        font-weight 400
+        font-size 20px
+        color #fff
+        padding 0 20px
+        line-height 30px
+        vertical-align bottom
+.menu-top.stuck
+  position fixed
+  top 0
+  left 0
+  right 0
+  height 50px
+  background #15233F
+  z-index 1000
+  padding 10px 50px
+.splash
+  background #15233F url(../images/p.png) fixed
+  min-height 650px
+  position relative
+  .splash-content
     position absolute
-    top 0
-    bottom 0
+    background rgba(0,0,0,0.2)
     left 0
     right 0
-    background url('../images/pattern.png')
-    background-repeat repeat
-    opacity 0.6
-    background-color rgba(0, 0, 0, 0.8)
-    -webkit-transition 1s cubic-bezier(0.42, 0.66, 0.14, 1)
-    -moz-transition 1s cubic-bezier(0.42, 0.66, 0.14, 1)
-    -o-transition 1s cubic-bezier(0.42, 0.66, 0.14, 1)
-    transition 1s cubic-bezier(0.42, 0.66, 0.14, 1)
-
-
-  .logo-content
-    display table
-    width 100%
-    height 100%
-    text-align center
-    .logo-inner
-      display table-cell
-      vertical-align middle
-      margin auto
-      .logo-tab
-        background rgba(255,255, 255, 0.9)
-        padding 15px 0
-        width 102%
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        img
-          width 70%
-  .social-zone
-    position absolute
+    top 0
     bottom 0
-    width 100%
-    height 60px
-    background rgba(255, 255, 255, 0.2)
-    .one-social
-      span(1/5)
-      padding 10px 0
-      a
-        color #fff
-      span
-        font-size 20px
-        line-height 40px
-.opener-container
-  position fixed
-  top 0
-  width 26%
-  margin 30px auto
-  //border 1px solid #ffffff
-  border-radius 2px
-  z-index 5
-  text-align center
-  a#menuopener
-    display block
-    cursor pointer
-    color #ffffff
-    [class^="ion-"]
-      display inline-block
-      padding-right 10px
+    .logozone
+      margin-top 200px
+      width 40%
+      float left
+      img
+        width 150px
+        margin-left 200px
+    .textzone
+      width 60%
+      margin-left 40%
+      margin-top 200px
+      h2
+        font-size 50px
+        color #ffffff
+        font-weight 600
+        margin-bottom 10px
+        margin-top 0
+        .orange
+          color #F7931D
 
-.menu-container
-  position: fixed;
-  overflow: hidden;
-  width: 26%;
-  height: 100%;
-  left: -26%;
-  z-index: 4;
-  -webkit-transition: 0.4s cubic-bezier(0.42, 0.66, 0.14, 1);
-  -moz-transition: 0.4s cubic-bezier(0.42, 0.66, 0.14, 1);
-  -o-transition: 0.4s cubic-bezier(0.42, 0.66, 0.14, 1);
-  transition: 0.4s cubic-bezier(0.42, 0.66, 0.14, 1);
-  .menu-content
-    margin 100px 0
-    ul
-      list-style none
-      margin 0
-      padding 0
-      text-align center
-      li
-        margin 5%
-        padding 0
-        a
-          color #fff
-          font-size 25px
-          font-weight 300
 
-.logo-container *:not(.logo-overlay)
-  opacity: 1;
-  -webkit-font-smoothing: antialiased;
-  -webkit-transition: 1s cubic-bezier(0.42, 0.66, 0.14, 1);
-  -moz-transition: 1s cubic-bezier(0.42, 0.66, 0.14, 1);
-  -o-transition: 1s cubic-bezier(0.42, 0.66, 0.14, 1);
-  transition: 1s cubic-bezier(0.42, 0.66, 0.14, 1);
-.navigation-active
-  .logo-overlay
-    background #5D99D2
-    background #004077
+.slick-slider
+  margin-bottom 0
+.intro-container
+  padding-top 20px
+  margin 50px 0px
+  position relative
+.intro
+  .slick-dots
+    bottom 0px
 
-    opacity 0.99
-  .menu-container
-    left 0
+  .oneslide
+    margin 0
+    height 500px
+    width 600px
+    background #fff
+    .thetext
+      position relative
+      float left
+      width 26%
+      margin 0 2%
+      h2
+        margin 0
+        color black
+        font-weight bold
 
-  .logo-container *:not(.logo-overlay)
-    opacity 0
-    -ms-transform: scale(0.9, 0.9);
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-
-.dotsforfun
-  z-index 2000
-  position fixed
-  top 0
-  right 0
-  bottom 0
-  width 40px
-  background #111
-  span
-    color #fff
-    display block
-    width 40px
-    line-height 30px
-    text-align center
-    font-size 13px
+    img
+      width 70%
+      vertical-align middle
+      margin 0 0 0 30%
