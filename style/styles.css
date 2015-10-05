@@ -312,7 +312,7 @@ h2.catchphrase {
   margin-bottom: 40px;
 }
 .competencies {
-  background: #02a383 url("../images/pattern.svg") no-repeat center center;
+  background: #194577 url("../images/pattern.svg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -327,7 +327,7 @@ h2.catchphrase {
   width: 100%;
 }
 .team {
-  background: #ec8c22 url("../images/cubes.png");
+  background: #194577 url("../images/cubes.png");
   padding-bottom: 40px;
   padding: 20px;
   margin-bottom: 50px;
@@ -359,7 +359,7 @@ h2.catchphrase {
   margin-bottom: 50px;
 }
 .location {
-  background: #df1e2f;
+  background: #194577;
   padding-bottom: 40px;
   padding: 20px;
   margin-bottom: 50px;
@@ -428,7 +428,7 @@ a.trustus {
   left: 0;
   right: 0;
   height: 60px;
-  background: #182233;
+  background: #194577;
   z-index: 1000;
   padding: 10px 50px;
   animation-delay: 3s;
@@ -438,13 +438,13 @@ a.trustus {
   animation-duration: 0s;
 }
 .splash {
-  background: #15233f url("../images/graphy-dark.png");
+  background: #194577;
   min-height: 650px;
   position: relative;
 }
 .splash .splash-content {
   position: absolute;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0);
   left: 0;
   right: 0;
   top: 0;
