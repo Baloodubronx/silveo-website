@@ -12,7 +12,7 @@ $(document).ready(function(){
     fade : true
   });
 
-  $('.splash').height($(window).height());
+  $('.splash').height($(window).height()-50);
   /*setTimeout(function() {
     $('#title1').addClass('animated fadeIn')
     .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
