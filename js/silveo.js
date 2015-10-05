@@ -37,9 +37,10 @@ $(document).ready(function(){
   var introheight = $('.intro-container').outerHeight();
   var appHeight = $('.approach').outerHeight();
   var mottoHeight = $('.motto').outerHeight();
+  var compHeight = $('.competencies').outerHeight();
 
   // TRUE OR FALSE?
-  var intro = false, approach = false, motto = false, comp = false;
+  var intro = false, approach = false, motto = false, comp = false, team=false;
 
   $(window).scroll(function() {
     var scrolling = $(this).scrollTop();
@@ -66,6 +67,12 @@ $(document).ready(function(){
 
     if ((!comp) && (scrolling > introheight+appHeight+mottoHeight + 400)) {
       $('.competencies').css('opacity',1).addClass('animated fadeInUp');
+      $('.trustus').css('opacity',1);
+      comp = true;
+    }
+
+    if ((!team) && (scrolling > introheight+appHeight+mottoHeight+compHeight+ 500)) {
+      $('.team').css('opacity',1).addClass('animated bounceIn');
       comp = true;
     }
   });
@@ -82,8 +89,7 @@ $(document).ready(function(){
 });
 
 // SOLVE THE SCROLLING ISSUE
-/*
+
 $(window).on('beforeunload', function(){
   $(window).scrollTop(0);
 });
-*/
