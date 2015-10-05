@@ -8,91 +8,88 @@ html(lang="en")
       | SILVEO - Solution delivery consulting
     link(rel="stylesheet", type="text/css", href="slick/slick.css")
     link(rel="stylesheet", type="text/css", href="slick/slick-theme.css")
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/animate.css")
     link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600', rel='stylesheet', type='text/css')
     link(href="style/styles.css", rel="stylesheet")
   
   body
-    .menu-top
-      ul
+    .menu-top.animated.fadeIn
+      ul.hidden-xs
         li
-          a(href="#")
+          a.scrollTo(href="#culture")
             | Culture
         li
-          a(href="#")
+          a.scrollTo(href="#competencies")
             | Competencies
         li
-          a(href="#")
+          a.scrollTo(href="#team")
             | Team
         li
-          a(href="#")
-            | Achievements
-        li
-          a(href="#")
+          a.scrollTo(href="#location")
             | Location
       h1 SILVEO
-    .splash
+      h1.pull-right.glyphicon.glyphicon-menu-hamburger.visible-xs
+        
+    .splash.animated.fadeIn
       .splash-content
-        .logozone
-          img(src="images/biglogodot.png")
-        .textzone
-          h2 IS 
+        .col-md-2
+        .col-md-2.col-sm-12
+          img.img-responsive.animated.fadeIn(src="images/biglogodot.png")
+        .col-md-1
+        .col-md-7
+          h2.animated.fadeIn#title1 IS 
             span.orange Consulting
-          h2 Human 
+          h2.animated.fadeIn#title2 Human 
             span.orange values
-          h2 Proven 
+          h2.animated.fadeIn#title3 Proven 
             span.orange methodology
-    //
-      .header
-        img.logo(src="images/logo.png")
-        .menu-top
-          ul
-            li
-              a(href="#")
-                | OUR CULTURE
-            li
-              img.onedot(src="images/dot.png")
-              a(href="#")
-                | OUR COMPETENCIES
-            li
-              img.onedot(src="images/dot.png")
-              a(href="#")
-                | OUR TEAM
-            li
-              img.onedot(src="images/dot.png")
-              a(href="#")
-                | ACHEIVEMENTS
-            li
-              img.onedot(src="images/dot.png")
-              a(href="#")
-                | LOCATION
               
     .content
-      .intro-container
+      .intro-container.hidden-xs
         .intro
           .oneslide
             .thetext
               h2
-                | It all started with a vision
+                | What we do
               p
-                | Quod opera consulta cogitabatur astute, ut hoc insidiarum genere Galli periret avunculus, ne eum ut praepotens acueret in fiduciam exitiosa coeptantem. verum navata est opera diligens hocque dilato Eusebius praepositus cubiculi missus est Cabillona aurum secum perferens, quo per turbulentos seditionum concitores occultius distributo et tumor consenuit militum et salus est in tuto locata praefecti. deinde cibo abunde perlato castra die praedicto sunt mota.
+                | Information Systems solution implementation and digitalization transformation
               p
-                | Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae consulares nobilitarunt et praefecturae.
-              p
-                | Ac ne quis a nobis hoc ita dici forte miretur, quod alia quaedam in hoc facultas sit ingeni, neque haec dicendi ratio aut disciplina, ne nos quidem huic uni studio penitus umquam dediti fuimus. Etenim omnes artes, quae ad humanitatem pertinent, habent quoddam commune vinculum, et quasi cognatione quadam inter se continentur.
-            img(src="images/1.png")
+                a(href="#")
+                  | Find out more
+            img(src="images/slider/1.jpg")
           .oneslide
             .thetext
               h2
-                | We love what we do
-            img(src="images/2.png")
+                | What we believe
+              p
+                | You care about behavior
+              p
+                a(href="#")
+                  | Find out more
+
+            img(src="images/slider/2.jpg")
           .oneslide
             .thetext
               h2
-                | And we do it worldwide
+                | Who we are
+              p
+                | Behind expert, there is small little heart pumping
+              p
+                a
+                  | Find out more
             img(src="images/3.png")
+          
+          .oneslide
+            .thetext
+              h2
+                | Where you can find us
+              p
+                | We have several locations around the world. See where you can find us and share a coffee.
+            img(src="images/slider/4.jpg")
       
-      .approach
+      .approach#culture
         h2.bigtitle
           | OUR CULTURE
         h2.catchphrase
@@ -100,60 +97,61 @@ html(lang="en")
           b
             | customer centric 
           | approach
-        .halfcol
-          h3.catch2
-            | Experts don't fit teams and sometimes fly solo
-          p.explain
-            | On top of expertise, human relationships and values are at the center of our consulting way: 
-            | Appraising team spirit, mutual support and human capital,
-            | Creating an open minded environment and positive attitude
-            | We are continuously seeking for the well-being and personal development of our talent, for a durable, loyal
-            | and long-term collaboration. 
-            | This attitude will make the strength of our company and strengthen ourrelationships with customers
         
-        .halfcol
-          h3.catch2
-            | Technical skills 
-            b
-              | is not enough
-          p.explain
-            | Being proactive, inventive to work, offering new solutions or thinking out of the box are a major building block of our consulting way.
-            | This creativity is the spark which will ignite new opportunities and enables us to demonstrate our greater value
-            | Our creativity is also expressed in the agility of our team and is possible by encouraging all initiatives seeking
-        .clear
-        .halfcol
-          h3.catch2
-            | Projects are 
-            b
-              | not only basic delivery
-          p.explain
-            | Positioning ourselves on a premium consulting service level, we are continuously seeking for excellency, high
-            | quality and differentiating value-added in every missions we deliver to our clients. This level of service is part
-            | of our consulting way and in the best interest of our clients.
-            | Because providing high quality deliverables is not enough, we measure that clients expect always more
-            | advisory roles and we are ready to keep up to their expectations.
+        .col-md-6
+          .halfcol
+            h3.catch2
+              | Team spirit is key
+            p.explain
+              | On top of expertise, human relationships and values are at the center of our consulting way. We are appraising team spirit, mutual support and human capital as one of our main core value. We are continuously seeking for the well-being and personal development of our talent, for a durable, loyal and long-term collaboration. This attitude shapes our company and strengthen our relationships with customers.
         
-        .halfcol
-          h3.catch2
-            | Being transparent 
-            b
-              | is not just 
-            |  telling the good news !
-          p.explain
-            | Trust is essential to creating a customer base: “We depend on repeating business. Our integrity has to be consistent all the time"
-            | This integrity, we prove it on a daily basis by: Being honest, transparent and ethics
-          p.explain
-            | We say what we do and we do what we say
+        .col-md-6
+          .halfcol
+            h3.catch2
+              | Technical skills 
+              b
+                | is not enough
+            p.explain
+              | Being proactive, inventive to work, offering new solutions or thinking out of the box are a major building block of our consulting way. This creativity is the spark which will ignite new opportunities and enables us to demonstrate our added value. Our creativity is also expressed in the agility of our team and is made possible by encouraging all initiatives.
+          
+        .clear 
+        .col-md-6
+          .halfcol
+            h3.catch2
+              | Projects are 
+              b
+                | not only basic delivery
+            p.explain
+              | Our consulting  way is based on a proven methodology which enables our team to deliver projects on a high quality level.
+              | It allows us to mitigate risk for our customers, costs and delays. 
+              | Our approach is based on 7 project stages and 7 continuous streams.
+            a(href="#", data-toggle="modal", data-target="#stepsModal")
+              img(src="images/steps.png")
+
             
-        .clear
+
         
+                  
+              
+        
+        .col-md-6
+          .halfcol
+            h3.catch2
+              | Being transparent 
+              b
+                | is not just 
+              |  telling the good news !
+            p.explain
+              | We foster to have fewer customer but many projects with them. To achieve this, trust is an essential value. This integrity need to be proven on daily basis by being honest and transparent.
+            p.explain
+              | We have a motto: 'We say what we do and we do what we say'.
+              
+        .clear
       
-      .quote
-        | "Try not to become a man of success, but rather try to become a man of value." 
-      .author
-        | Albert Einstein
+      .motto
+        img(src='images/motto.png')
       
-      .competencies
+      .competencies.clearfix#competencies
         h2.bigtitle
           | OUR COMPETENCIES
         h2.catchphrase
@@ -163,51 +161,82 @@ html(lang="en")
           | and 
           b
             | availability
+        .col-md-6
+          .halfcol
+            h3.catch2
+              | SAP & MOM Logistic expertise
+            p.explain
+              | SAP expertise (PP/MM/LE/SD/QM/PM)
+            p.explain
+              | MES/LES expertise (APRISO/Barcode)
         
-        .halfcol
-          h3.catch2
-            | Project Management
-          p.explain
-            | Customer blueprint and  project organization definition, project assistance
-        .halfcol
-          h3.catch2
-            | Functional assistance
-          p.explain
-            | Methodology, change management and business specifications
+        .col-md-6      
+          .halfcol  
+            h3.catch2
+              | SAP Financial
+            p.explain
+              | Financial solution integration (FI/CO/PS/IM/FM)  
         .clear
-        .halfcol
-          h3.catch2
-            | Solutions’ design
-          p.explain
-            | Process / SAP / MES solutions’ design or retrofit projects
-        .halfcol
-          h3.catch2
-            | Full scope projects
-          p.explain
-            | End-to-end Information Systems roll-out
-        .clear
+        
+        .col-md-6
+          .halfcol  
+            h3.catch2
+              | Functional expertise
+            p.explain
+              | Logistic expertise: end-to-end functional coverage in Supply Chain & Manufacturing (From Strategic planning to execution)
+        
+        .col-md-6  
+          .halfcol
+            h3.catch2
+              | Digital transformation
+            p.explain
+              | Multi-platform development and mobility
+            p.explain
+              | Business intelligence and data analysis
+            p.explain
+              | Digitalization strategy
           
-        .halfcol
-          h3.catch2
-            | Logistics expertise
-          p.explain
-            | SAP expertise (PP/MM/LE/SD/QM/PM) 
-          p.explain
-            | MES expertise (APRISO/Barcode)
-          p.explain
-            | An end-to-end functional coverage in Supply Chain & Manufacturing (From Strategic planning to execution)
-        .halfcol
-          h3.catch2
-            | Financial
-          p.explain
-            | Financial solution integration (FI/CO/PS/IM/FM)
-        
         .clear
-        
-      .motto
-        img(src='images/motto.png')
-          
-      .team
+        .col-md-6
+          .halfcol
+            h3.catch2
+              | Project Management
+            p.explain
+              | Project management methodology
+            p.explain
+              | IT governance strategy
+            p.explain
+              | Intercultural management
+            p.explain
+              | Risk analysis
+            p.explain
+              | Change management
+          .clear
+      
+      
+      a.trustus.animated.infinite.pulse(href="#", data-toggle="modal", data-target="#myModal")
+        | They trust us
+
+      
+
+      .modal.fade(id="myModal", tabindex="-1", role="dialog",aria-labelledby="myModalLabel")
+        .modal-dialog(role="document")
+          .modal-content
+            .modal-header
+              button(type="button", class="close", data-dismiss="modal", aria-label="Close")
+                span(aria-hidden="true")
+                  | &times;
+              h4.modal-title(id="myModalLabel")
+                | They trust us
+            
+            .modal-body
+              img.img-responsive(src="images/trust-01.png")
+            .modal-footer
+              button(type="button",class="btn btn-default",data-dismiss="modal")
+                | Close
+              
+      
+      .team.clearfix#team
         h2.bigtitle
           | OUR TEAM
         h2.catchphrase
@@ -217,8 +246,74 @@ html(lang="en")
           b
             | key to success
         
-      
+        .col-md-3
+          .onemember
+            img(src="images/team/karim.png")
+            p
+              b
+                | KARIM AÏT EL MOUDEN
+              br
+              br
+              | Chief Executive Officer
+        .col-md-3
+          .onemember
+            img(src="images/team/marcantoine.png")
+            p
+              b
+                | MARC-ANTOINE PEUCH
+              br
+              br
+              | Chief Operation Officer & Quality Assurance
+        
+        .col-md-3
+          .onemember
+            img(src="images/team/lolo.png")
+            p
+              b
+                | LAURENT AUTEBERT
+              br
+              br
+              | Chief Innovation Officer
+        
+        
+        .col-md-3
+          .onemember
+            img(src="images/team/romain.png")
+            p
+              b
+                | ROMAIN DURANDO
+                br
+                br
+              | Sales Director
+    
+        .clearfix
+    
+      .fewnumbers
+        img.img-responsive(src="images/numbers.png")
+    
+      .location.clearfix#location
+        h2.bigtitle
+          | LOCATIONS
+        h2.catchphrase
+          | Come visit us for a cofee!
+        .col-md-1
+        .col-md-10
+          img.img-responsive.pull-left(src="images/map.png")
+        .col-md-1
+    .modal.fade(id="stepsModal", tabindex="1", role="dialog",aria-labelledby="myModalLabel")
+      .modal-dialog.modal-lg(role="document")
+        .modal-content
+          .modal-header
+            button(type="button", class="close", data-dismiss="modal", aria-label="Close")
+              span(aria-hidden="true")
+                | &times;
+            h4.modal-title(id="myModalLabel")
+              | Projects methodology at SILVEO
+          
+          .modal-body
+            img(src="images/steps.png")  
     
     script(src="js/vendors/jquery.min.js")
+    script(src="js/bootstrap.min.js")
     script(type="text/javascript", src="slick/slick.min.js")
     script(src="js/silveo.js")

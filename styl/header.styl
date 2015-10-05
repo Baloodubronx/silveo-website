@@ -9,11 +9,12 @@
   z-index 1000
   padding 30px 50px
   h1
-    font-size 30px
+    font-size 2em
     font-weight 600
     display inline-block
     color #ffffff
     line-height 10px
+    vertical-align middle
   ul
     list-style none
     margin 0
@@ -32,17 +33,23 @@
         padding 0 20px
         line-height 30px
         vertical-align bottom
-.menu-top.stuck
+.menu-top
   position fixed
   top 0
   left 0
   right 0
-  height 50px
-  background #15233F
+  height 60px
+  background #182233
   z-index 1000
   padding 10px 50px
+  animation-delay 3s
+
+.stuck
+  animation-delay 0s
+  animation-duration 0s
+
 .splash
-  background #15233F url(../images/p.png) fixed
+  background #15233F url(../images/graphy-dark.png)
   min-height 650px
   position relative
   .splash-content
@@ -52,26 +59,28 @@
     right 0
     top 0
     bottom 0
-    .logozone
-      margin-top 200px
-      width 40%
-      float left
-      img
-        width 150px
-        margin-left 200px
-    .textzone
-      width 60%
-      margin-left 40%
-      margin-top 200px
-      h2
-        font-size 50px
-        color #ffffff
-        font-weight 600
-        margin-bottom 10px
-        margin-top 0
-        .orange
-          color #F7931D
+    padding-top 200px
+    h2
+      font-size 3em
+      color #ffffff
+      font-weight 600
+      margin-bottom 10px
+      margin-top 0
+      .orange
+        color #F7931D
+    img
+      margin auto
 
+@media (max-width: 992px)
+  .splash
+    margin-bottom 50px
+    .splash-content
+      padding-top:100px
+      text-align center
+      img
+        margin-bottom 50px
+      h2
+        font-size 2.5em
 
 .slick-slider
   margin-bottom 0
@@ -92,7 +101,7 @@
       position relative
       float left
       width 26%
-      margin 0 2%
+      margin 50px 2%
       h2
         margin 0
         color black

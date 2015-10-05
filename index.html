@@ -7,165 +7,208 @@
     <title>SILVEO - Solution delivery consulting</title>
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600" rel="stylesheet" type="text/css">
     <link href="style/styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="menu-top">
-      <ul>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Competencies</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Achievements</a></li>
-        <li><a href="#">Location</a></li>
+    <div class="menu-top animated fadeIn">
+      <ul class="hidden-xs">
+        <li><a href="#culture" class="scrollTo">Culture</a></li>
+        <li><a href="#competencies" class="scrollTo">Competencies</a></li>
+        <li><a href="#team" class="scrollTo">Team</a></li>
+        <li><a href="#location" class="scrollTo">Location</a></li>
       </ul>
       <h1>SILVEO</h1>
+      <h1 class="pull-right glyphicon glyphicon-menu-hamburger visible-xs"></h1>
     </div>
-    <div class="splash">
+    <div class="splash animated fadeIn">
       <div class="splash-content">
-        <div class="logozone"><img src="images/biglogodot.png"></div>
-        <div class="textzone">
-          <h2>IS <span class="orange">Consulting</span></h2>
-          <h2>Human <span class="orange">values</span></h2>
-          <h2>Proven <span class="orange">methodology</span></h2>
+        <div class="col-md-2"></div>
+        <div class="col-md-2 col-sm-12"><img src="images/biglogodot.png" class="img-responsive animated fadeIn"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+          <h2 id="title1" class="animated fadeIn">IS <span class="orange">Consulting</span></h2>
+          <h2 id="title2" class="animated fadeIn">Human <span class="orange">values</span></h2>
+          <h2 id="title3" class="animated fadeIn">Proven <span class="orange">methodology</span></h2>
         </div>
       </div>
     </div>
-    <!--
-    .header
-      img.logo(src="images/logo.png")
-      .menu-top
-        ul
-          li
-            a(href="#")
-              | OUR CULTURE
-          li
-            img.onedot(src="images/dot.png")
-            a(href="#")
-              | OUR COMPETENCIES
-          li
-            img.onedot(src="images/dot.png")
-            a(href="#")
-              | OUR TEAM
-          li
-            img.onedot(src="images/dot.png")
-            a(href="#")
-              | ACHEIVEMENTS
-          li
-            img.onedot(src="images/dot.png")
-            a(href="#")
-              | LOCATION
-            
-    -->
     <div class="content">
-      <div class="intro-container">
+      <div class="intro-container hidden-xs">
         <div class="intro">
           <div class="oneslide">
             <div class="thetext">
-              <h2>It all started with a vision</h2>
-              <p>Quod opera consulta cogitabatur astute, ut hoc insidiarum genere Galli periret avunculus, ne eum ut praepotens acueret in fiduciam exitiosa coeptantem. verum navata est opera diligens hocque dilato Eusebius praepositus cubiculi missus est Cabillona aurum secum perferens, quo per turbulentos seditionum concitores occultius distributo et tumor consenuit militum et salus est in tuto locata praefecti. deinde cibo abunde perlato castra die praedicto sunt mota.</p>
-              <p>Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae consulares nobilitarunt et praefecturae.</p>
-              <p>Ac ne quis a nobis hoc ita dici forte miretur, quod alia quaedam in hoc facultas sit ingeni, neque haec dicendi ratio aut disciplina, ne nos quidem huic uni studio penitus umquam dediti fuimus. Etenim omnes artes, quae ad humanitatem pertinent, habent quoddam commune vinculum, et quasi cognatione quadam inter se continentur.</p>
-            </div><img src="images/1.png">
+              <h2>What we do</h2>
+              <p>Information Systems solution implementation and digitalization transformation</p>
+              <p><a href="#">Find out more</a></p>
+            </div><img src="images/slider/1.jpg">
           </div>
           <div class="oneslide">
             <div class="thetext">
-              <h2>We love what we do</h2>
-            </div><img src="images/2.png">
+              <h2>What we believe</h2>
+              <p>You care about behavior</p>
+              <p><a href="#">Find out more</a></p>
+            </div><img src="images/slider/2.jpg">
           </div>
           <div class="oneslide">
             <div class="thetext">
-              <h2>And we do it worldwide</h2>
+              <h2>Who we are</h2>
+              <p>Behind expert, there is small little heart pumping</p>
+              <p><a>Find out more</a></p>
             </div><img src="images/3.png">
           </div>
+          <div class="oneslide">
+            <div class="thetext">
+              <h2>Where you can find us</h2>
+              <p>We have several locations around the world. See where you can find us and share a coffee.</p>
+            </div><img src="images/slider/4.jpg">
+          </div>
         </div>
       </div>
-      <div class="approach">
+      <div id="culture" class="approach">
         <h2 class="bigtitle">OUR CULTURE</h2>
         <h2 class="catchphrase">We believe in a <b>customer centric </b>approach</h2>
-        <div class="halfcol">
-          <h3 class="catch2">Experts don't fit teams and sometimes fly solo</h3>
-          <p class="explain">
-            On top of expertise, human relationships and values are at the center of our consulting way: 
-            Appraising team spirit, mutual support and human capital,
-            Creating an open minded environment and positive attitude
-            We are continuously seeking for the well-being and personal development of our talent, for a durable, loyal
-            and long-term collaboration. 
-            This attitude will make the strength of our company and strengthen ourrelationships with customers
-          </p>
+        <div class="col-md-6">
+          <div class="halfcol">
+            <h3 class="catch2">Team spirit is key</h3>
+            <p class="explain">On top of expertise, human relationships and values are at the center of our consulting way. We are appraising team spirit, mutual support and human capital as one of our main core value. We are continuously seeking for the well-being and personal development of our talent, for a durable, loyal and long-term collaboration. This attitude shapes our company and strengthen our relationships with customers.</p>
+          </div>
         </div>
-        <div class="halfcol">
-          <h3 class="catch2">Technical skills <b>is not enough</b></h3>
-          <p class="explain">
-            Being proactive, inventive to work, offering new solutions or thinking out of the box are a major building block of our consulting way.
-            This creativity is the spark which will ignite new opportunities and enables us to demonstrate our greater value
-            Our creativity is also expressed in the agility of our team and is possible by encouraging all initiatives seeking
-          </p>
+        <div class="col-md-6">
+          <div class="halfcol">
+            <h3 class="catch2">Technical skills <b>is not enough</b></h3>
+            <p class="explain">Being proactive, inventive to work, offering new solutions or thinking out of the box are a major building block of our consulting way. This creativity is the spark which will ignite new opportunities and enables us to demonstrate our added value. Our creativity is also expressed in the agility of our team and is made possible by encouraging all initiatives.</p>
+          </div>
         </div>
-        <div class="clear"></div>
-        <div class="halfcol">
-          <h3 class="catch2">Projects are <b>not only basic delivery</b></h3>
-          <p class="explain">
-            Positioning ourselves on a premium consulting service level, we are continuously seeking for excellency, high
-            quality and differentiating value-added in every missions we deliver to our clients. This level of service is part
-            of our consulting way and in the best interest of our clients.
-            Because providing high quality deliverables is not enough, we measure that clients expect always more
-            advisory roles and we are ready to keep up to their expectations.
-          </p>
+        <div class="clear"> </div>
+        <div class="col-md-6">
+          <div class="halfcol">
+            <h3 class="catch2">Projects are <b>not only basic delivery</b></h3>
+            <p class="explain">
+              Our consulting  way is based on a proven methodology which enables our team to deliver projects on a high quality level.
+              It allows us to mitigate risk for our customers, costs and delays. 
+              Our approach is based on 7 project stages and 7 continuous streams.
+            </p><a href="#" data-toggle="modal" data-target="#stepsModal"><img src="images/steps.png"></a>
+          </div>
         </div>
-        <div class="halfcol">
-          <h3 class="catch2">Being transparent <b>is not just </b> telling the good news !</h3>
-          <p class="explain">
-            Trust is essential to creating a customer base: “We depend on repeating business. Our integrity has to be consistent all the time"
-            This integrity, we prove it on a daily basis by: Being honest, transparent and ethics
-          </p>
-          <p class="explain">We say what we do and we do what we say</p>
-        </div>
-        <div class="clear"></div>
-      </div>
-      <div class="quote">"Try not to become a man of success, but rather try to become a man of value." </div>
-      <div class="author">Albert Einstein</div>
-      <div class="competencies">
-        <h2 class="bigtitle">OUR COMPETENCIES</h2>
-        <h2 class="catchphrase">End to end implementation requires <b>experience, technical capabilities </b>and <b>availability</b></h2>
-        <div class="halfcol">
-          <h3 class="catch2">Project Management</h3>
-          <p class="explain">Customer blueprint and  project organization definition, project assistance</p>
-        </div>
-        <div class="halfcol">
-          <h3 class="catch2">Functional assistance</h3>
-          <p class="explain">Methodology, change management and business specifications</p>
-        </div>
-        <div class="clear"></div>
-        <div class="halfcol">
-          <h3 class="catch2">Solutions’ design</h3>
-          <p class="explain">Process / SAP / MES solutions’ design or retrofit projects</p>
-        </div>
-        <div class="halfcol">
-          <h3 class="catch2">Full scope projects</h3>
-          <p class="explain">End-to-end Information Systems roll-out</p>
-        </div>
-        <div class="clear"></div>
-        <div class="halfcol">
-          <h3 class="catch2">Logistics expertise</h3>
-          <p class="explain">SAP expertise (PP/MM/LE/SD/QM/PM) </p>
-          <p class="explain">MES expertise (APRISO/Barcode)</p>
-          <p class="explain">An end-to-end functional coverage in Supply Chain & Manufacturing (From Strategic planning to execution)</p>
-        </div>
-        <div class="halfcol">
-          <h3 class="catch2">Financial</h3>
-          <p class="explain">Financial solution integration (FI/CO/PS/IM/FM)</p>
+        <div class="col-md-6">
+          <div class="halfcol">
+            <h3 class="catch2">Being transparent <b>is not just </b> telling the good news !</h3>
+            <p class="explain">We foster to have fewer customer but many projects with them. To achieve this, trust is an essential value. This integrity need to be proven on daily basis by being honest and transparent.</p>
+            <p class="explain">We have a motto: 'We say what we do and we do what we say'.</p>
+          </div>
         </div>
         <div class="clear"></div>
       </div>
       <div class="motto"><img src="images/motto.png"></div>
-      <div class="team">
+      <div id="competencies" class="competencies clearfix">
+        <h2 class="bigtitle">OUR COMPETENCIES</h2>
+        <h2 class="catchphrase">End to end implementation requires <b>experience, technical capabilities </b>and <b>availability</b></h2>
+        <div class="col-md-6">
+          <div class="halfcol">
+            <h3 class="catch2">SAP & MOM Logistic expertise</h3>
+            <p class="explain">SAP expertise (PP/MM/LE/SD/QM/PM)</p>
+            <p class="explain">MES/LES expertise (APRISO/Barcode)</p>
+          </div>
+        </div>
+        <div class="col-md-6">     
+          <div class="halfcol"> 
+            <h3 class="catch2">SAP Financial</h3>
+            <p class="explain">Financial solution integration (FI/CO/PS/IM/FM)  </p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="col-md-6">
+          <div class="halfcol"> 
+            <h3 class="catch2">Functional expertise</h3>
+            <p class="explain">Logistic expertise: end-to-end functional coverage in Supply Chain & Manufacturing (From Strategic planning to execution)</p>
+          </div>
+        </div>
+        <div class="col-md-6"> 
+          <div class="halfcol">
+            <h3 class="catch2">Digital transformation</h3>
+            <p class="explain">Multi-platform development and mobility</p>
+            <p class="explain">Business intelligence and data analysis</p>
+            <p class="explain">Digitalization strategy</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="col-md-6">
+          <div class="halfcol">
+            <h3 class="catch2">Project Management</h3>
+            <p class="explain">Project management methodology</p>
+            <p class="explain">IT governance strategy</p>
+            <p class="explain">Intercultural management</p>
+            <p class="explain">Risk analysis</p>
+            <p class="explain">Change management</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div><a href="#" data-toggle="modal" data-target="#myModal" class="trustus animated infinite pulse">They trust us</a>
+      <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="myModalLabel" class="modal-title">They trust us</h4>
+            </div>
+            <div class="modal-body"><img src="images/trust-01.png" class="img-responsive"></div>
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="team" class="team clearfix">
         <h2 class="bigtitle">OUR TEAM</h2>
         <h2 class="catchphrase"><b>Diversity of consultants </b>is the <b>key to success</b></h2>
+        <div class="col-md-3">
+          <div class="onemember"><img src="images/team/karim.png">
+            <p><b>KARIM AÏT EL MOUDEN</b><br><br>Chief Executive Officer</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="onemember"><img src="images/team/marcantoine.png">
+            <p><b>MARC-ANTOINE PEUCH</b><br><br>Chief Operation Officer & Quality Assurance</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="onemember"><img src="images/team/lolo.png">
+            <p><b>LAURENT AUTEBERT</b><br><br>Chief Innovation Officer</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="onemember"><img src="images/team/romain.png">
+            <p><b>ROMAIN DURANDO<br><br></b>Sales Director</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="fewnumbers"><img src="images/numbers.png" class="img-responsive"></div>
+      <div id="location" class="location clearfix">
+        <h2 class="bigtitle">LOCATIONS</h2>
+        <h2 class="catchphrase">Come visit us for a cofee!</h2>
+        <div class="col-md-1"></div>
+        <div class="col-md-10"><img src="images/map.png" class="img-responsive pull-left"></div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <div id="stepsModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="myModalLabel" class="modal-title">Projects methodology at SILVEO</h4>
+          </div>
+          <div class="modal-body"><img src="images/steps.png"></div>
+        </div>
       </div>
     </div>
     <script src="js/vendors/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/silveo.js"></script>
   </body>

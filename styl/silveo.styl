@@ -7,17 +7,32 @@ body
   //width 1100px
   margin auto
   //margin-top 60px
-  background url(../images/handmadepaper.png)
+  //background url(../images/handmadepaper.png)
 a
   color theblue
   text-decoration none
+  &:active
+    outline none
+  &:focus
+    outline none
+  &:hover
+    text-decoration none
+/*@media (max-width: 2000px) {
+    body{font-size: 14px;}
+}
+
+
+@media (max-width: 992px) {
+    body{font-size: 10px;}
+}*/
+
 
 .onedot
   height 20px
   float left
 
 .content
-  width 1100px
+  max-width 1100px
   margin auto
   position relative
 
@@ -54,6 +69,7 @@ p
   background-size: cover;
   padding-bottom 40px
   margin-bottom 50px
+  position relative
 
 h2.bigtitle
   display inline-block
@@ -84,10 +100,8 @@ h2.catchphrase
   text-shadow: 2px 2px #111;
 
 .halfcol
-  position  relative
-  width 45%
-  float left
-  margin 20px
+  position relative
+  margin-bottom 20px
   h3.catch2
     margin 0
     padding 0
@@ -102,6 +116,10 @@ h2.catchphrase
     color #ffffff
     font-size 15px
     margin-bottom 0
+  img
+    width 94%
+    margin 10px 3%
+    border 1px solid #ffffff
 
 .halfcol:before
   position absolute
@@ -132,6 +150,8 @@ h2.catchphrase
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-bottom 30px
+  margin-bottom 50px
 
 .motto
   margin 50px 0
@@ -139,11 +159,58 @@ h2.catchphrase
     width 100%
 
 .team
-  background:  url(../images/teambg.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  //background:  url(../images/teambg.png) no-repeat center center;
+  background #EC8C22 url(../images/cubes.png)
   padding-bottom 40px
+  padding 20px
   margin-bottom 50px
-  height 800px
+
+  .onemember
+    background #ffffff
+    display inline-block
+    //width 100%
+    margin auto
+    height 200px
+    position relative
+    margin-top 100px
+    width 100%
+
+    img
+      width 150px
+      position absolute
+      top -70px
+      left 50px
+    p
+      margin 10px
+      margin-top 80px
+      text-align center
+      font-size 18px
+
+.fewnumbers
+  width 80%
+  margin auto
+  margin-bottom 50px
+
+.location
+  background:  #DF1E2F
+  padding-bottom 40px
+  padding 20px
+  margin-bottom 50px
+
+a.trustus
+  display block
+  text-align center
+  margin 50px 0
+  font-size 30px
+
+#title1, #title2, #title3
+  animation-duration: 1s;
+
+#title1
+  animation-delay: 1s;
+
+#title2
+  animation-delay 2s
+
+#title3
+  animation-delay 3s

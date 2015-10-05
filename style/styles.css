@@ -172,10 +172,18 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   margin: auto;
-  background: url("../images/handmadepaper.png");
 }
 a {
   color: #24518a;
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+a:focus {
+  outline: none;
+}
+a:hover {
   text-decoration: none;
 }
 .onedot {
@@ -183,7 +191,7 @@ a {
   float: left;
 }
 .content {
-  width: 1100px;
+  max-width: 1100px;
   margin: auto;
   position: relative;
 }
@@ -225,6 +233,7 @@ p {
   background-size: cover;
   padding-bottom: 40px;
   margin-bottom: 50px;
+  position: relative;
 }
 h2.bigtitle {
   display: inline-block;
@@ -256,9 +265,7 @@ h2.catchphrase {
 }
 .halfcol {
   position: relative;
-  width: 45%;
-  float: left;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 .halfcol h3.catch2 {
   margin: 0;
@@ -275,6 +282,11 @@ h2.catchphrase {
   color: #fff;
   font-size: 15px;
   margin-bottom: 0;
+}
+.halfcol img {
+  width: 94%;
+  margin: 10px 3%;
+  border: 1px solid #fff;
 }
 .halfcol:before {
   position: absolute;
@@ -305,6 +317,8 @@ h2.catchphrase {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 .motto {
   margin: 50px 0;
@@ -313,14 +327,62 @@ h2.catchphrase {
   width: 100%;
 }
 .team {
-  background: url("../images/teambg.png") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #ec8c22 url("../images/cubes.png");
   padding-bottom: 40px;
+  padding: 20px;
   margin-bottom: 50px;
-  height: 800px;
+}
+.team .onemember {
+  background: #fff;
+  display: inline-block;
+  margin: auto;
+  height: 200px;
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+}
+.team .onemember img {
+  width: 150px;
+  position: absolute;
+  top: -70px;
+  left: 50px;
+}
+.team .onemember p {
+  margin: 10px;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 18px;
+}
+.fewnumbers {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.location {
+  background: #df1e2f;
+  padding-bottom: 40px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+a.trustus {
+  display: block;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 30px;
+}
+#title1,
+#title2,
+#title3 {
+  animation-duration: 1s;
+}
+#title1 {
+  animation-delay: 1s;
+}
+#title2 {
+  animation-delay: 2s;
+}
+#title3 {
+  animation-delay: 3s;
 }
 .menu-top {
   position: fixed;
@@ -332,11 +394,12 @@ h2.catchphrase {
   padding: 30px 50px;
 }
 .menu-top h1 {
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 600;
   display: inline-block;
   color: #fff;
   line-height: 10px;
+  vertical-align: middle;
 }
 .menu-top ul {
   list-style: none;
@@ -359,18 +422,23 @@ h2.catchphrase {
   line-height: 30px;
   vertical-align: bottom;
 }
-.menu-top.stuck {
+.menu-top {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
-  background: #15233f;
+  height: 60px;
+  background: #182233;
   z-index: 1000;
   padding: 10px 50px;
+  animation-delay: 3s;
+}
+.stuck {
+  animation-delay: 0s;
+  animation-duration: 0s;
 }
 .splash {
-  background: #15233f url("../images/p.png") fixed;
+  background: #15233f url("../images/graphy-dark.png");
   min-height: 650px;
   position: relative;
 }
@@ -381,30 +449,35 @@ h2.catchphrase {
   right: 0;
   top: 0;
   bottom: 0;
+  padding-top: 200px;
 }
-.splash .splash-content .logozone {
-  margin-top: 200px;
-  width: 40%;
-  float: left;
-}
-.splash .splash-content .logozone img {
-  width: 150px;
-  margin-left: 200px;
-}
-.splash .splash-content .textzone {
-  width: 60%;
-  margin-left: 40%;
-  margin-top: 200px;
-}
-.splash .splash-content .textzone h2 {
-  font-size: 50px;
+.splash .splash-content h2 {
+  font-size: 3em;
   color: #fff;
   font-weight: 600;
   margin-bottom: 10px;
   margin-top: 0;
 }
-.splash .splash-content .textzone h2 .orange {
+.splash .splash-content h2 .orange {
   color: #f7931d;
+}
+.splash .splash-content img {
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .splash {
+    margin-bottom: 50px;
+  }
+  .splash .splash-content {
+    padding-top: 100px;
+    text-align: center;
+  }
+  .splash .splash-content img {
+    margin-bottom: 50px;
+  }
+  .splash .splash-content h2 {
+    font-size: 2.5em;
+  }
 }
 .slick-slider {
   margin-bottom: 0;
@@ -427,7 +500,7 @@ h2.catchphrase {
   position: relative;
   float: left;
   width: 26%;
-  margin: 0 2%;
+  margin: 50px 2%;
 }
 .intro .oneslide .thetext h2 {
   margin: 0;
