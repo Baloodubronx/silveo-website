@@ -1,4 +1,4 @@
-theblue = #24518A
+theblue = #102F5F
 theorange = #F6921C
 
 body
@@ -42,13 +42,13 @@ a
 
 .container:after
   border-bottom 3px solid theorange
-  opacity 0.5
+  //opacity 0.5
   content ''
   position absolute
-  bottom 0
+  bottom -1px
   left 0
   width 100%
-  height 2px
+  height 3px
 
 h1
 h2
@@ -79,7 +79,7 @@ img.padded
   margin-top 40px
 
 .approach
-  background:  url(../images/appbg.png) no-repeat center center;
+  background: theblue url(../images/appbg.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -149,7 +149,7 @@ h2.catchphrase
   margin-bottom 40px
 
 .competencies
-  background #194577 url(../images/pattern.svg) no-repeat center center
+  background theblue url(../images/pattern.svg) no-repeat center center
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -162,7 +162,7 @@ h2.catchphrase
 
 .team
   //background:  url(../images/teambg.png) no-repeat center center;
-  background #194577 url(../images/cubes.png)
+  background theblue url(../images/cubes.png)
 
   .onemember
     background #ffffff
@@ -195,7 +195,7 @@ h2.catchphrase
       padding 20px
 
 .location
-  background:  #194577
+  background:  theblue
 
 a.trustus
   display block
@@ -217,10 +217,30 @@ a.trustus
 
 
 .footer
-  background theorange
-  opacity 0.9
+  background #eeeeee
   width 100%
-  text-align center
+  text-align left
+  padding 20px 0
+  border-top 3px solid theorange
   p
     padding 10px 0
     margin 0
+    color #999
+  p.center
+    text-align center
+  .footerzone
+    img
+      display inline-block
+      float left
+      height 80px
+    p.zonetitle
+      color theorange
+      line-height 30px
+      padding 10px 0 0 0
+      font-weight 400
+      text-transform uppercase
+    p.zonetext
+      color theblue
+      line-height 30px
+      padding 0 0 10px 0
+      font-weight 500

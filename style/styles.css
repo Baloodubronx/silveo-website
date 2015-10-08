@@ -174,7 +174,7 @@ body {
   margin: auto;
 }
 a {
-  color: #24518a;
+  color: #102f5f;
   text-decoration: none;
 }
 a:active {
@@ -200,13 +200,12 @@ a:hover {
 }
 .container:after {
   border-bottom: 3px solid #f6921c;
-  opacity: 0.5;
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
 }
 h1,
 h2,
@@ -221,7 +220,7 @@ h1 {
 }
 h2 {
   font-size: 2.5em;
-  color: #24518a;
+  color: #102f5f;
   text-transform: uppercase;
 }
 h3 {
@@ -242,7 +241,7 @@ img.padded {
   margin-top: 40px;
 }
 .approach {
-  background: url("../images/appbg.png") no-repeat center center;
+  background: #102f5f url("../images/appbg.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -313,7 +312,7 @@ h2.catchphrase {
   margin-bottom: 40px;
 }
 .competencies {
-  background: #194577 url("../images/pattern.svg") no-repeat center center;
+  background: #102f5f url("../images/pattern.svg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -326,7 +325,7 @@ h2.catchphrase {
   width: 100%;
 }
 .team {
-  background: #194577 url("../images/cubes.png");
+  background: #102f5f url("../images/cubes.png");
 }
 .team .onemember {
   background: #fff;
@@ -360,7 +359,7 @@ h2.catchphrase {
   padding: 20px;
 }
 .location {
-  background: #194577;
+  background: #102f5f;
 }
 a.trustus {
   display: block;
@@ -383,14 +382,49 @@ a.trustus {
   animation-delay: 3s;
 }
 .footer {
-  background: #f6921c;
-  opacity: 0.9;
+  background: #eee;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  padding: 20px 0;
+  border-top: 3px solid #f6921c;
 }
 .footer p {
   padding: 10px 0;
   margin: 0;
+  color: #999;
+}
+.footer p.center {
+  text-align: center;
+}
+.footer .footerzone img {
+  display: inline-block;
+  float: left;
+  height: 80px;
+}
+.footer .footerzone p.zonetitle {
+  color: #f6921c;
+  line-height: 30px;
+  padding: 10px 0 0 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.footer .footerzone p.zonetext {
+  color: #102f5f;
+  line-height: 30px;
+  padding: 0 0 10px 0;
+  font-weight: 500;
+}
+.menu-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: transparent;
+  z-index: 1000;
+  padding: 10px 50px;
+  animation-delay: 3s;
+  transition: all 1s;
 }
 .menu-top h1 {
   font-size: 30px;
@@ -423,24 +457,12 @@ a.trustus {
   line-height: 30px;
   vertical-align: bottom;
 }
-.menu-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: rgba(25,69,119,0.9);
-  z-index: 1000;
-  padding: 10px 50px;
-  animation-delay: 3s;
-  transition: all 1s;
-}
 .stuck {
   animation-delay: 0s;
   animation-duration: 0s;
 }
 .splash {
-  background: #194577;
+  background: #102f5f;
   min-height: 650px;
   position: relative;
 }
