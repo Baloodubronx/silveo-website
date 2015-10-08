@@ -15,297 +15,30 @@ html(lang="en")
     link(href="style/styles.css", rel="stylesheet")
   
   body
-    .menu-top.animated.fadeIn
-      ul.hidden-xs
-        li
-          a.scrollTo(href="#culture")
-            | Culture
-        li
-          a.scrollTo(href="#competencies")
-            | Competencies
-        li
-          a.scrollTo(href="#team")
-            | Team
-        li
-          a.scrollTo(href="#location")
-            | Location
-      h1 SILVEO
-      h1.pull-right.glyphicon.glyphicon-menu-hamburger.visible-xs
-        
-    .splash.animated.fadeIn
-      .splash-content
-        .col-md-2
-        .col-md-2.col-sm-12
-          img.img-responsive.animated.fadeIn(src="images/biglogodot.png")
-        .col-md-1
-        .col-md-7
-          h2.animated.fadeIn#title1 IS 
-            span.orange Consulting
-          h2.animated.fadeIn#title2 Human 
-            span.orange values
-          h2.animated.fadeIn#title3 Proven 
-            span.orange methodology
+    // The top menu
+    include pages/menu.jade
+    
+    // The splash
+    include pages/splash.jade
               
     .content
-      .intro-container.hidden-xs
-        .intro
-          .oneslide
-            .thetext
-              h2
-                | What we do
-              p
-                | Information Systems solution implementation and digitalization transformation
-              p
-                a(href="#")
-                  | Find out more
-            img(src="images/slider/1.jpg")
-          .oneslide
-            .thetext
-              h2
-                | What we believe
-              p
-                | You care about behavior
-              p
-                a(href="#")
-                  | Find out more
-
-            img(src="images/slider/2.jpg")
-          .oneslide
-            .thetext
-              h2
-                | Who we are
-              p
-                | Behind expert, there is small little heart pumping
-              p
-                a
-                  | Find out more
-            img(src="images/3.png")
-          
-          .oneslide
-            .thetext
-              h2
-                | Where you can find us
-              p
-                | We have several locations around the world. See where you can find us and share a coffee.
-            img(src="images/slider/4.jpg")
+      include pages/slider.jade
       
-      .approach#culture
-        h2.bigtitle
-          | OUR 
-          span.orange
-            | CULTURE
-        h2.catchphrase
-          | We believe in a 
-          b
-            | customer centric 
-          | approach
-        
-        .col-md-6
-          .halfcol
-            h3.catch2
-              | Team spirit is key
-            p.explain
-              | On top of expertise, human relationships and values are at the center of our consulting way. We are appraising team spirit, mutual support and human capital as one of our main core value. We are continuously seeking for the well-being and personal development of our talent, for a durable, loyal and long-term collaboration. This attitude shapes our company and strengthen our relationships with customers.
-        
-        .col-md-6
-          .halfcol
-            h3.catch2
-              | Technical skills 
-              b
-                | is not enough
-            p.explain
-              | Being proactive, inventive to work, offering new solutions or thinking out of the box are a major building block of our consulting way. This creativity is the spark which will ignite new opportunities and enables us to demonstrate our added value. Our creativity is also expressed in the agility of our team and is made possible by encouraging all initiatives.
-          
-        .clear 
-        .col-md-6
-          .halfcol
-            h3.catch2
-              | Projects are 
-              b
-                | not only basic delivery
-            p.explain
-              | Our consulting  way is based on a proven methodology which enables our team to deliver projects on a high quality level.
-              | It allows us to mitigate risk for our customers, costs and delays. 
-              | Our approach is based on 7 project stages and 7 continuous streams.
-            a(href="#", data-toggle="modal", data-target="#stepsModal")
-              img(src="images/steps.png")
-
-            
-
-        
-                  
+      include pages/culture.jade
+      
+      
+      //.motto
+        //img(src='images/motto.png')
+      
+      include pages/competencies.jade
               
-        
-        .col-md-6
-          .halfcol
-            h3.catch2
-              | Being transparent 
-              b
-                | is not just 
-              |  telling the good news !
-            p.explain
-              | We foster to have fewer customer but many projects with them. To achieve this, trust is an essential value. This integrity need to be proven on daily basis by being honest and transparent.
-            p.explain
-              | We have a motto: 'We say what we do and we do what we say'.
-              
-        .clear
+      include pages/team.jade
       
-      .motto
-        img(src='images/motto.png')
+      include pages/location.jade
       
-      .competencies.clearfix#competencies
-        h2.bigtitle
-          | OUR 
-          span.orange
-            | COMPETENCIES
-        h2.catchphrase
-          | End to end implementation requires 
-          b
-            | experience, technical capabilities 
-          | and 
-          b
-            | availability
-        .col-md-6
-          .halfcol
-            h3.catch2
-              | SAP & MOM Logistic expertise
-            p.explain
-              | SAP expertise (PP/MM/LE/SD/QM/PM)
-            p.explain
-              | MES/LES expertise (APRISO/Barcode)
-        
-        .col-md-6      
-          .halfcol  
-            h3.catch2
-              | SAP Financial
-            p.explain
-              | Financial solution integration (FI/CO/PS/IM/FM)  
-        .clear
-        
-        .col-md-6
-          .halfcol  
-            h3.catch2
-              | Functional expertise
-            p.explain
-              | Logistic expertise: end-to-end functional coverage in Supply Chain & Manufacturing (From Strategic planning to execution)
-        
-        .col-md-6  
-          .halfcol
-            h3.catch2
-              | Digital transformation
-            p.explain
-              | Multi-platform development and mobility
-            p.explain
-              | Business intelligence and data analysis
-            p.explain
-              | Digitalization strategy
-          
-        .clear
-        .col-md-6
-          .halfcol
-            h3.catch2
-              | Project Management
-            p.explain
-              | Project management methodology
-            p.explain
-              | IT governance strategy
-            p.explain
-              | Intercultural management
-            p.explain
-              | Risk analysis
-            p.explain
-              | Change management
-          .clear
-      
-      
-      a.trustus.animated.infinite.pulse(href="#", data-toggle="modal", data-target="#myModal")
-        | They trust us
-
-      
-
-      .modal.fade(id="myModal", tabindex="-1", role="dialog",aria-labelledby="myModalLabel")
-        .modal-dialog(role="document")
-          .modal-content
-            .modal-header
-              button(type="button", class="close", data-dismiss="modal", aria-label="Close")
-                span(aria-hidden="true")
-                  | &times;
-              h4.modal-title(id="myModalLabel")
-                | They trust us
-            
-            .modal-body
-              img.img-responsive(src="images/trust-01.png")
-            .modal-footer
-              button(type="button",class="btn btn-default",data-dismiss="modal")
-                | Close
-              
-      
-      .team.clearfix#team
-        h2.bigtitle
-          | OUR 
-          span.orange
-            | TEAM
-        h2.catchphrase
-          b
-            | Diversity of consultants 
-          | is the 
-          b
-            | key to success
-        
-        .col-md-3
-          .onemember
-            img(src="images/team/karim.png")
-            p
-              b
-                | KARIM AÏT EL MOUDEN
-              br
-              br
-              | Chief Executive Officer
-        .col-md-3
-          .onemember
-            img(src="images/team/marcantoine.png")
-            p
-              b
-                | MARC-ANTOINE PEUCH
-              br
-              br
-              | Chief Operation Officer & Quality Assurance
-        
-        .col-md-3
-          .onemember
-            img(src="images/team/lolo.png")
-            p
-              b
-                | LAURENT AUTEBERT
-              br
-              br
-              | Chief Innovation Officer
-        
-        
-        .col-md-3
-          .onemember
-            img(src="images/team/romain.png")
-            p
-              b
-                | ROMAIN DURANDO
-                br
-                br
-              | Sales Director
+      include pages/footer.jade
     
-        .clearfix
-    
-      .fewnumbers
-        img.img-responsive(src="images/numbers.png")
-    
-      .location.clearfix#location
-        h2.bigtitle.orange
-          | LOCATIONS
-        h2.catchphrase
-          | Come visit us for a cofee!
-        .col-md-1
-        .col-md-10
-          img.img-responsive.pull-left(src="images/map.png")
-        .col-md-1
+      
     .modal.fade(id="stepsModal", tabindex="1", role="dialog",aria-labelledby="myModalLabel")
       .modal-dialog.modal-lg(role="document")
         .modal-content
@@ -317,7 +50,7 @@ html(lang="en")
               | Projects methodology at SILVEO
           
           .modal-body
-            img(src="images/steps.png")  
+            img.img-responsive(src="images/methodo-01.png")  
     
     script(src="js/vendors/jquery.min.js")
     script(src="js/bootstrap.min.js")

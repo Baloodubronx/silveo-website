@@ -191,9 +191,22 @@ a:hover {
   float: left;
 }
 .content {
+  margin: auto;
+}
+.container {
   max-width: 1100px;
   margin: auto;
-  position: relative;
+  padding: 60px 0 80px 0;
+}
+.container:after {
+  border-bottom: 3px solid #f6921c;
+  opacity: 0.5;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
 }
 h1,
 h2,
@@ -225,31 +238,31 @@ p {
   font-size: 1.1em;
   font-weight: 200;
 }
+img.padded {
+  margin-top: 40px;
+}
 .approach {
   background: url("../images/appbg.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 40px;
-  margin-bottom: 50px;
   position: relative;
 }
 h2.bigtitle {
   display: block;
-  margin: 40px;
-  margin-top: 60px;
+  margin: 0 0 40px 0;
   font-size: 30px;
-  padding: 30px 0px;
+  padding: 0px;
   color: #fff;
-  line-height: 20px;
   text-align: center;
 }
 h2.catchphrase {
   color: #fff;
-  margin: 0 0 30px 40px;
+  margin: 0 0 50px 0;
   font-weight: 200;
   text-shadow: 2px 2px #111;
+  text-align: center;
 }
 .halfcol {
   position: relative;
@@ -305,8 +318,6 @@ h2.catchphrase {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
 }
 .motto {
   margin: 50px 0;
@@ -316,9 +327,6 @@ h2.catchphrase {
 }
 .team {
   background: #194577 url("../images/cubes.png");
-  padding-bottom: 40px;
-  padding: 20px;
-  margin-bottom: 50px;
 }
 .team .onemember {
   background: #fff;
@@ -341,21 +349,23 @@ h2.catchphrase {
   text-align: center;
   font-size: 18px;
 }
-.fewnumbers {
+.team .fewnumbers {
+  margin: 60px auto;
+}
+.team .fewnumbers img {
   width: 80%;
+  display: block;
   margin: auto;
-  margin-bottom: 50px;
+  background: #fff;
+  padding: 20px;
 }
 .location {
   background: #194577;
-  padding-bottom: 40px;
-  padding: 20px;
-  margin-bottom: 50px;
 }
 a.trustus {
   display: block;
   text-align: center;
-  margin: 50px 0;
+  margin: 10px 0;
   font-size: 30px;
 }
 #title1,
@@ -372,28 +382,31 @@ a.trustus {
 #title3 {
   animation-delay: 3s;
 }
-.menu-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 70px;
-  z-index: 1000;
-  padding: 30px 50px;
+.footer {
+  background: #f6921c;
+  opacity: 0.9;
+  width: 100%;
+  text-align: center;
+}
+.footer p {
+  padding: 10px 0;
+  margin: 0;
 }
 .menu-top h1 {
-  font-size: 2em;
+  font-size: 30px;
   font-weight: 600;
   display: inline-block;
   color: #fff;
-  line-height: 10px;
+  line-height: 60px;
   vertical-align: middle;
+  margin: 0;
+  padding: 0;
 }
 .menu-top ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 42px;
+  height: 40px;
   float: right;
 }
 .menu-top ul li {
@@ -416,10 +429,11 @@ a.trustus {
   left: 0;
   right: 0;
   height: 60px;
-  background: #194577;
+  background: rgba(25,69,119,0.9);
   z-index: 1000;
   padding: 10px 50px;
   animation-delay: 3s;
+  transition: all 1s;
 }
 .stuck {
   animation-delay: 0s;
@@ -473,8 +487,9 @@ a.trustus {
 }
 .intro-container {
   padding-top: 20px;
-  margin: 50px 0px;
+  margin: 50px auto;
   position: relative;
+  max-width: 1100px;
 }
 .intro .slick-dots {
   bottom: 0px;

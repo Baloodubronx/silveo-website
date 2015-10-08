@@ -89,7 +89,8 @@ $(document).ready(function(){
 });
 
 // SOLVE THE SCROLLING ISSUE
-
+/*
 $(window).on('beforeunload', function(){
   $(window).scrollTop(0);
 });
+*/
